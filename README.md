@@ -2,31 +2,35 @@
 The base of a Spruce component library
 
 # Components
+* Animation
 * Badge
+* Box
 * Breadcrumbs
 * Button
 * Checkbox
+* Choice
+* ColumnSet
+* DayPicker
 * DeadEnd
 * Dropdown
 * Grid
 * Heading
 * Icon
-* InfoBox
 * Input
-* Input Rows
+* InputRow
 * Label
 * Link
-* List????
-* Loader / Spinner
+* List
+* Loader
 * Media
-* Modals
+* Modal
 * Navigation
 * Pagination
 * ProgressBar
-* Box
 * Select
 * Table
-* TabSet / Tab
+* TabSet
 * Terminal
+* Text
 * Typography
 * Wrapper
