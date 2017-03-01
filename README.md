@@ -29,7 +29,7 @@ The base of a Spruce component library
 * ProgressBar
 * Select
 * Table
-* TabSet
+* ToggleSet
 * Terminal
 * Text
 * Typography
