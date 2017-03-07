@@ -22,6 +22,7 @@ The base of a Spruce component library
 * Link
 * List
 * Loader
+* Login
 * Media
 * Modal
 * Navigation
