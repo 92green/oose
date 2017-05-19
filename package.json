@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:allanhortle/goose.git",
   "author": "Allan Hortle <allanhortle@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "stampy": "^0.25.0"
+  }
 }

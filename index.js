@@ -6,7 +6,8 @@ var overrides = {
     Link: 'a',
     List: 'ul',
     Select: 'select',
-    Table: 'table'
+    Table: 'table',
+    Divider: 'hr'
 };
 
 var list = [
@@ -17,12 +18,12 @@ var list = [
     'Button',
     'Checkbox',
     'Choice',
+    'Column',
     'ColumnSet',
     'DayPicker',
     'DeadEnd',
+    'Divider',
     'Dropdown',
-    'Grid',
-    'Heading',
     'Icon',
     'Input',
     'InputRow',
@@ -31,6 +32,7 @@ var list = [
     'List',
     'Loader',
     'Login',
+    'Logo',
     'Media',
     'Message',
     'Modal',
@@ -39,13 +41,15 @@ var list = [
     'ProgressBar',
     'Select',
     'Table',
-    'ToggleSet',
     'Terminal',
     'Text',
+    'Toggle',
+    'ToggleSet',
     'Typography',
     'Wrapper'
 ];
 
-module.exports = list.reduce((exports, key) => {
-    exports[key] = SpruceComponent(key, overrides[key] || 'div');
+module.exports = list.reduce((rr, key) => {
+    rr[key] = SpruceComponent.default(key, overrides[key] || 'div');
+    return rr;
 }, {});
