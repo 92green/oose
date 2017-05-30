@@ -40,6 +40,8 @@ var list = [
     'Pagination',
     'ProgressBar',
     'Select',
+    'Tab',
+    'TabSet',
     'Table',
     'Terminal',
     'Text',
