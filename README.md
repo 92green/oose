@@ -18,7 +18,6 @@ The base of a Spruce component library
 * Icon
 * Input
 * InputRow
-* Label
 * Link
 * List
 * Loader
@@ -33,6 +32,10 @@ The base of a Spruce component library
 * Table
 * ToggleSet
 * Terminal
-* Text
+## Text
+Core modifiers: `alpha` `beta` `gamma` `label` `strong` `emphasis` `muted`
+
+Raw characters of text.
+
 * Typography
 * Wrapper
