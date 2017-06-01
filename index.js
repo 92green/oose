@@ -5,6 +5,7 @@ var overrides = {
     Label: 'label',
     Link: 'a',
     List: 'ul',
+    ListItem: 'li',
     Select: 'select',
     Table: 'table',
     Divider: 'hr'
@@ -30,6 +31,7 @@ var list = [
     'Label',
     'Link',
     'List',
+    'ListItem',
     'Loader',
     'Login',
     'Logo',
