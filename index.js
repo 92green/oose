@@ -25,6 +25,7 @@ var list = [
     'DeadEnd',
     'Divider',
     'Dropdown',
+    'FieldRow',
     'Icon',
     'Input',
     'InputRow',
