@@ -54,7 +54,9 @@ var list = [
     'Wrapper'
 ];
 
-module.exports = list.reduce((rr, key) => {
+function createComponentMap(rr, key) {
     rr[key] = SpruceComponent.default(key, overrides[key] || 'div');
     return rr;
-}, {});
+}
+
+module.exports = list.reduce(createComponentMap, {});
