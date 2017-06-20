@@ -24,7 +24,18 @@ Core modifiers: `hero` `success` `failure` `$color`
 ## List
 Core modifiers: divided ordered unordered nested 
 Groupings of related content. 
+
 ## Loader
+Displays the current state of some asynchronous operation.
+
+### Children: 
+ * `message` - Indicates the reason for this asynchronous state.
+ * `progress` - Visual indication that the operation is ongoing. E.g. spinner, percentage, bar.
+
+### Core Modifiers: 
+ * `spinner`
+ * `progress`
+
 ## Login
 ## Media
 ## Message
