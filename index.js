@@ -1,6 +1,6 @@
 var SpruceComponent = require('stampy/lib/util/SpruceComponent');
 
-var overrides = {
+var elementOverrides = {
     Text: 'span',
     Label: 'label',
     Link: 'a',
@@ -11,6 +11,10 @@ var overrides = {
     Divider: 'hr'
 };
 
+var spruceNameOverrides = {
+    Column: 'Grid_column'
+};
+
 var list = [
     'Animation',
     'Badge',
@@ -19,13 +23,13 @@ var list = [
     'Button',
     'Checkbox',
     'Choice',
+    'Column',
     'DayPicker',
     'DeadEnd',
     'Divider',
     'Dropdown',
     'FieldRow',
     'Grid',
-    'Grid_column',
     'Icon',
     'Input',
     'InputRow',
@@ -55,7 +59,7 @@ var list = [
 ];
 
 function createComponentMap(rr, key) {
-    rr[key] = SpruceComponent.default(key, overrides[key] || 'div');
+    rr[key] = SpruceComponent.default(spruceNameOverrides[key] || key, elementOverrides[key] || 'div');
     return rr;
 }
 
