@@ -126,6 +126,8 @@ Core modifiers: `alpha` `beta` `gamma` `delta` `label` `strong` `emphasis` `mute
 ## Typography
 
 ## Wrapper
+A container that enforces vertical page boundaries, such as a maximum width and page alignment.
+
 Core modifiers: `spread` `$breakpoint`
 - `spread` - Fills the width of the parent element.
 - `$breakpoint` - Sets a maximum width of the element, typically with values such as `large`, `small` etc.
