@@ -32,7 +32,6 @@ var list = [
     'Grid',
     'Icon',
     'Input',
-    'InputRow',
     'Label',
     'Link',
     'List',
