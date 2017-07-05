@@ -1,5 +1,5 @@
 # Goose
-The base of a Spruce component library
+The base of a Spruce component library. It aims to describe the functions of UI components semantically, and without knowledge of how styles will visually appear.
 
 # Core Components
 
@@ -17,11 +17,14 @@ Core modifiers: `hero` `success` `failure` `hairline` `thin` `thick`
 - `thick` - Applies a thick amount of padding.
 
 ## Button
-Core modifiers: `primary` `hero` `success` `failure` `$color` `small` `clear` 
-- `primary` - Makes the button more visually prominent.
 
-The unmodified `Button` should be styled in a secondary color. The `primary` modifier can be used to highlight buttons that need more visual prominence.
-Buttons should 
+The unmodified `Button` should appear as having netural importance. The `primary` modifier can be used on buttons that need to convey more importance.
+
+Core modifiers: `primary` `success` `failure` `$color` `small` `clear` `solo`
+- `primary` - Makes the button more important.
+- `success` - A button that implies a positive outcome.
+- `failure` - A button that implies a negative outcome.
+- `solo` - A button that is standalone and does not have siblings within the information heirarchy.
 
 ## Checkbox
 ???
@@ -105,7 +108,7 @@ Information presented to the user from the site.
 ## Text
 Raw characters of text.
 
-Core modifiers: `alpha` `beta` `gamma` `delta` `label` `strong` `emphasis` `muted` `left` `center` `right`
+Core modifiers: `alpha` `beta` `gamma` `delta` `label` `strong` `emphasis` `muted`
 
 #### Sizing
 - `alpha` - First level heading.
@@ -113,15 +116,9 @@ Core modifiers: `alpha` `beta` `gamma` `delta` `label` `strong` `emphasis` `mute
 - `gamma` - Third level heading.
 - `delta` - Fourth level heading.
 
-#### Visual Prominence
+#### Importance
 - `emphasis` - Styled to demonstrate an emphasis on the text.
-- `muted` - Styled to be muted, less visually prominent than normal.
-
-#### Alignment
-- `left` - Left aligned text.
-- `center` - Center aligned text.
-- `right` - Right aligned text.
-
+- `muted` - Styled to be muted, less important than normal.
 
 ## Typography
 
@@ -139,12 +136,9 @@ Core modifiers: `spread` `$breakpoint`
 ## Breadcrumbs
 The representation of one branch of a tree hierarchy
 
-# Generic Modifiers
+# Rodo: Confused modifiers
 
-These modifiers have a common meaning across all components, and may be implemented by many different components.
+These are perhaps too bound to specific visual or design choices and will need to be worked upon before being accepted or rejected from goose.
 
-- `column`
 - `flood` - Fills the width and height of the parent element.
-- `hero` - Applies the hero color scheme to the element.
-- `row`
 - `spread` - Fills the width of the parent element.
