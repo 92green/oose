@@ -28,7 +28,6 @@ var list = [
     'Grid_column',
     'Icon',
     'Input',
-    'InputRow',
     'Label',
     'Link',
     'List',
