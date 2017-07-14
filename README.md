@@ -3,20 +3,28 @@ The base of a Spruce component library. It aims to describe the functions of UI 
 
 # Core Components
 
-## Badge
+## Badge ![](https://img.shields.io/badge/status-draft-red.svg)
 An un-interactive presentation of state.
 Core modifiers: `success` `failure` `hero` `$color`
 
-## Box
+## Box ![](https://img.shields.io/badge/status-candidate-yellow.svg)
 A divided area of content.
 
 The unmodified `Box` should not have any margins or padding so it can be used as an invisible element container, like a `<div>`.
 
-Core modifiers: `hero` `success` `failure` `hairline` `thin` `thick`
-- `thin` - Applies a thin amount of padding.
-- `thick` - Applies a thick amount of padding.
+### Modifiers
+* `hero` - 
+* `success` - 
+* `failure` - 
+* `hairline` - 
+* `thin` - Applies a thin amount of padding.
+* `thick` - Applies a thick amount of padding.
+* `tight` - Applies a tight amount of margins.
+* `loose` - Applies a loose amount of margins.
 
-## Button ![](https://img.shields.io/badge/status-settling-yellow.svg)
+
+
+## Button ![](https://img.shields.io/badge/status-candidate-yellow.svg)
 
 The unmodified `Button` should appear as having netural importance. The `primary` modifier can be used on buttons that need to convey more importance.
 
@@ -26,103 +34,103 @@ Core modifiers: `primary` `success` `failure` `$color` `small` `clear` `solo`
 - `failure` - A button that implies a negative outcome.
 - `solo` - A button that is standalone and does not have siblings within the information heirarchy.
 
-## Checkbox
+## Checkbox ![](https://img.shields.io/badge/status-draft-red.svg)
 ???
 
-## Choice
+## Choice ![](https://img.shields.io/badge/status-draft-red.svg)
 The result of a user selection.
 
-## DayPicker
+## DayPicker ![](https://img.shields.io/badge/status-draft-red.svg)
 A way to choose a date and or time.
 
-## DeadEnd
+## DeadEnd ![](https://img.shields.io/badge/status-draft-red.svg)
 The point at which the user can no longer progress and must choose to navigate elsewhere.
 E.g: 404's, Large form submissions.
 
 
-## Dropdown
+## Dropdown ![](https://img.shields.io/badge/status-draft-red.svg)
 
 
-## FieldRow
+## FieldRow ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Grid
+## Grid ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Header
+## Header ![](https://img.shields.io/badge/status-draft-red.svg)
 ???
 
-## Icon
+## Icon ![](https://img.shields.io/badge/status-draft-red.svg)
 
 
-## Input
+## Input ![](https://img.shields.io/badge/status-draft-red.svg)
 Textual input.
 
-## Lightbox
+## Lightbox ![](https://img.shields.io/badge/status-draft-red.svg)
 
 
-## Link
+## Link ![](https://img.shields.io/badge/status-draft-red.svg)
 A link to other content.
 
 
-## List
+## List ![](https://img.shields.io/badge/status-draft-red.svg)
 Core modifiers: `divided` `ordered` `unordered` `nested` 
 Groupings of related content. 
 
 
-## Loader ![](https://img.shields.io/badge/status-volatile-red.svg)
+## Loader ![](https://img.shields.io/badge/status-draft-red.svg)
 Displays the current state of some asynchronous operation.
 
-### Children:
+### Children ![](https://img.shields.io/badge/status-draft-red.svg):
  * `message` - Indicates the reason for this asynchronous state.
  * `progress` - Visual indication that the operation is ongoing. E.g. spinner, percentage, bar.
 
-### Core Modifiers:
+### Core ![](https://img.shields.io/badge/status-draft-red.svg) Modifiers:
  * `spinner`
  * `progress`
 
 
-## Login
+## Login ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Media
+## Media ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Message
+## Message ![](https://img.shields.io/badge/status-draft-red.svg)
 Information presented to the user from the site. 
 
-## Modal
+## Modal ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Navigation
+## Navigation ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Overlay
+## Overlay ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Pagination
+## Pagination ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## ProgressBar
+## ProgressBar ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Select
+## Select ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Table
+## Table ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## ToggleSet
+## ToggleSet ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Terminal
+## Terminal ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Text
+## Text ![](https://img.shields.io/badge/status-draft-red.svg)
 Raw characters of text.
 
 Core modifiers: `alpha` `beta` `gamma` `delta` `label` `strong` `emphasis` `muted`
 
-#### Sizing
+#### ![](https://img.shields.io/badge/status-draft-red.svg) Sizing ![](https://img.shields.io/badge/status-draft-red.svg)
 - `alpha` - First level heading.
 - `beta` - Second level heading.
 - `gamma` - Third level heading.
 - `delta` - Fourth level heading.
 
-#### Importance
+#### ![](https://img.shields.io/badge/status-draft-red.svg) Importance ![](https://img.shields.io/badge/status-draft-red.svg)
 - `emphasis` - Styled to demonstrate an emphasis on the text.
 - `muted` - Styled to be muted, less important than normal.
 
-## Typography
+## Typography ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Wrapper
+## Wrapper ![](https://img.shields.io/badge/status-draft-red.svg)
 A container that enforces vertical page boundaries, such as a maximum width and page alignment.
 
 Core modifiers: `spread` `$breakpoint`
@@ -131,9 +139,9 @@ Core modifiers: `spread` `$breakpoint`
 
 # Extra Components
 
-## Animation
+## Animation ![](https://img.shields.io/badge/status-draft-red.svg)
 
-## Breadcrumbs
+## Breadcrumbs ![](https://img.shields.io/badge/status-draft-red.svg)
 The representation of one branch of a tree hierarchy
 
 # Rodo: Confused modifiers
