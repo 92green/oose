@@ -3,11 +3,11 @@ The base of a Spruce component library. It aims to describe the functions of UI 
 
 # Core Components
 
-## Badge ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Badge 
 An un-interactive presentation of state.
 Core modifiers: `success` `failure` `hero` `$color`
 
-## Box ![](https://img.shields.io/badge/-candidate-yellow.svg)
+## ![](https://img.shields.io/badge/-candidate-yellow.svg) Box 
 A divided area of content.
 
 The unmodified `Box` should not have any margins or padding so it can be used as an invisible element container, like a `<div>`.
@@ -24,7 +24,7 @@ The unmodified `Box` should not have any margins or padding so it can be used as
 
 
 
-## Button ![](https://img.shields.io/badge/-candidate-yellow.svg)
+## ![](https://img.shields.io/badge/-candidate-yellow.svg) Button 
 
 The unmodified `Button` should appear as having netural importance. The `primary` modifier can be used on buttons that need to convey more importance.
 
@@ -34,49 +34,49 @@ Core modifiers: `primary` `success` `failure` `$color` `small` `clear` `solo`
 - `failure` - A button that implies a negative outcome.
 - `solo` - A button that is standalone and does not have siblings within the information heirarchy.
 
-## Checkbox ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Checkbox 
 ???
 
-## Choice ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Choice 
 The result of a user selection.
 
-## DayPicker ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) DayPicker 
 A way to choose a date and or time.
 
-## DeadEnd ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) DeadEnd 
 The point at which the user can no longer progress and must choose to navigate elsewhere.
 E.g: 404's, Large form submissions.
 
 
-## Dropdown ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Dropdown 
 
 
-## FieldRow ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) FieldRow 
 
-## Grid ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Grid 
 
-## Header ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Header 
 ???
 
-## Icon ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Icon 
 
 
-## Input ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Input 
 Textual input.
 
-## Lightbox ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Lightbox 
 
 
-## Link ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Link 
 A link to other content.
 
 
-## List ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) List 
 Core modifiers: `divided` `ordered` `unordered` `nested` 
 Groupings of related content. 
 
 
-## Loader ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Loader 
 Displays the current state of some asynchronous operation.
 
 ### Children
@@ -88,32 +88,32 @@ Displays the current state of some asynchronous operation.
  * `progress`
 
 
-## Login ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Login 
 
-## Media ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Media 
 
-## Message ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Message 
 Information presented to the user from the site. 
 
-## Modal ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Modal 
 
-## Navigation ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Navigation 
 
-## Overlay ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Overlay 
 
-## Pagination ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Pagination 
 
-## ProgressBar ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) ProgressBar 
 
-## Select ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Select 
 
-## Table ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Table 
 
-## ToggleSet ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) ToggleSet 
 
-## Terminal ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Terminal 
 
-## Text ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Text 
 Raw characters of text.
 
 Core modifiers: `alpha` `beta` `gamma` `delta` `label` `strong` `emphasis` `muted`
@@ -128,9 +128,9 @@ Core modifiers: `alpha` `beta` `gamma` `delta` `label` `strong` `emphasis` `mute
 - `emphasis` - Styled to demonstrate an emphasis on the text.
 - `muted` - Styled to be muted, less important than normal.
 
-## Typography ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Typography 
 
-## Wrapper ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Wrapper 
 A container that enforces vertical page boundaries, such as a maximum width and page alignment.
 
 Core modifiers: `spread` `$breakpoint`
@@ -139,9 +139,9 @@ Core modifiers: `spread` `$breakpoint`
 
 # Extra Components
 
-## Animation ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Animation 
 
-## Breadcrumbs ![](https://img.shields.io/badge/-draft-red.svg)
+## ![](https://img.shields.io/badge/-draft-red.svg) Breadcrumbs 
 The representation of one branch of a tree hierarchy
 
 # Rodo: Confused modifiers
