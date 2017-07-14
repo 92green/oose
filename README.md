@@ -16,7 +16,7 @@ Core modifiers: `hero` `success` `failure` `hairline` `thin` `thick`
 - `thin` - Applies a thin amount of padding.
 - `thick` - Applies a thick amount of padding.
 
-## Button
+## Button ![](https://img.shields.io/badge/status-settling-yellow.svg)
 
 The unmodified `Button` should appear as having netural importance. The `primary` modifier can be used on buttons that need to convey more importance.
 
@@ -68,7 +68,7 @@ Core modifiers: `divided` `ordered` `unordered` `nested`
 Groupings of related content. 
 
 
-## Loader
+## Loader ![](https://img.shields.io/badge/status-volatile-red.svg)
 Displays the current state of some asynchronous operation.
 
 ### Children:
