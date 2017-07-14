@@ -79,11 +79,11 @@ Groupings of related content.
 ## Loader ![](https://img.shields.io/badge/-draft-red.svg)
 Displays the current state of some asynchronous operation.
 
-### Children ![](https://img.shields.io/badge/-draft-red.svg):
+### Children
  * `message` - Indicates the reason for this asynchronous state.
  * `progress` - Visual indication that the operation is ongoing. E.g. spinner, percentage, bar.
 
-### Core ![](https://img.shields.io/badge/-draft-red.svg) Modifiers:
+### Modifiers
  * `spinner`
  * `progress`
 
