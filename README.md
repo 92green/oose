@@ -79,10 +79,6 @@ Groupings of related content.
 ## ![](https://img.shields.io/badge/-draft-red.svg) Loader 
 Displays the current state of an asynchronous operation.
 
-### Modifiers
- * `spinner`
- * `progress`
-
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) Login 
 
