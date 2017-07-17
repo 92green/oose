@@ -77,11 +77,7 @@ Groupings of related content.
 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) Loader 
-Displays the current state of some asynchronous operation.
-
-### Children
- * `message` - Indicates the reason for this asynchronous state.
- * `progress` - Visual indication that the operation is ongoing. E.g. spinner, percentage, bar.
+Displays the current state of an asynchronous operation.
 
 ### Modifiers
  * `spinner`
