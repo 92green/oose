@@ -23,7 +23,6 @@ The unmodified `Box` should not have any margins or padding so it can be used as
 * `loose` - Applies a loose amount of margins.
 
 
-
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg) Button 
 
 The unmodified `Button` should appear as having netural importance. The `primary` modifier can be used on buttons that need to convey more importance.
@@ -40,16 +39,7 @@ Core modifiers: `primary` `success` `failure` `$color` `small` `clear` `solo`
 ## ![](https://img.shields.io/badge/-draft-red.svg) Choice 
 The result of a user selection.
 
-## ![](https://img.shields.io/badge/-draft-red.svg) DayPicker 
-A way to choose a date and or time.
-
-## ![](https://img.shields.io/badge/-draft-red.svg) DeadEnd 
-The point at which the user can no longer progress and must choose to navigate elsewhere.
-E.g: 404's, Large form submissions.
-
-
 ## ![](https://img.shields.io/badge/-draft-red.svg) Dropdown 
-
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) FieldRow 
 
@@ -64,7 +54,6 @@ E.g: 404's, Large form submissions.
 ## ![](https://img.shields.io/badge/-draft-red.svg) Input 
 Textual input.
 
-## ![](https://img.shields.io/badge/-draft-red.svg) Lightbox 
 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) Link 
@@ -80,20 +69,12 @@ Groupings of related content.
 Displays the current state of an asynchronous operation.
 
 
-## ![](https://img.shields.io/badge/-draft-red.svg) Login 
-
 ## ![](https://img.shields.io/badge/-draft-red.svg) Media 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) Message 
 Information presented to the user from the site. 
 
-## ![](https://img.shields.io/badge/-draft-red.svg) Modal 
-
-## ![](https://img.shields.io/badge/-draft-red.svg) Navigation 
-
 ## ![](https://img.shields.io/badge/-draft-red.svg) Overlay 
-
-## ![](https://img.shields.io/badge/-draft-red.svg) Pagination 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) ProgressBar 
 
@@ -129,12 +110,32 @@ Core modifiers: `spread` `$breakpoint`
 - `spread` - Fills the width of the parent element.
 - `$breakpoint` - Sets a maximum width of the element, typically with values such as `large`, `small` etc.
 
+
+# Too Complex. (Are they molecules?)
+
+## ![](https://img.shields.io/badge/-draft-red.svg) Pagination 
+## ![](https://img.shields.io/badge/-draft-red.svg) Lightbox 
+## ![](https://img.shields.io/badge/-draft-red.svg) Navigation 
+## ![](https://img.shields.io/badge/-draft-red.svg) DayPicker 
+A way to choose a date and or time.
+
+## ![](https://img.shields.io/badge/-draft-red.svg) DeadEnd 
+The point at which the user can no longer progress and must choose to navigate elsewhere.
+E.g: 404's, Large form submissions.
+
+## ![](https://img.shields.io/badge/-draft-red.svg) Login 
+
+
+
 # Extra Components
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) Animation 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) Breadcrumbs 
 The representation of one branch of a tree hierarchy
+
+
+## ![](https://img.shields.io/badge/-draft-red.svg) Modal 
 
 # Rodo: Confused modifiers
 
