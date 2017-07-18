@@ -124,20 +124,13 @@ The point at which the user can no longer progress and must choose to navigate e
 E.g: 404's, Large form submissions.
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) Login 
-
-
-
-# Extra Components
-
-## ![](https://img.shields.io/badge/-draft-red.svg) Animation 
-
+## ![](https://img.shields.io/badge/-draft-red.svg) Modal 
 ## ![](https://img.shields.io/badge/-draft-red.svg) Breadcrumbs 
 The representation of one branch of a tree hierarchy
 
 
-## ![](https://img.shields.io/badge/-draft-red.svg) Modal 
 
-# Rodo: Confused modifiers
+# Todo: Confused modifiers
 
 These are perhaps too bound to specific visual or design choices and will need to be worked upon before being accepted or rejected from goose.
 
