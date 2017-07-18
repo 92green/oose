@@ -12,7 +12,8 @@ var elementOverrides = {
 };
 
 var spruceNameOverrides = {
-    Column: 'Grid_column'
+    Column: 'Grid_column',
+    ListItem: 'List_item'
 };
 
 var list = [
