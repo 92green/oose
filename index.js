@@ -32,6 +32,7 @@ var list = [
     'FieldRow',
     'Grid',
     'Icon',
+    'Image',
     'Input',
     'Label',
     'Link',
