@@ -50,10 +50,10 @@ The result of a user selection.
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) Icon 
 
+## ![](https://img.shields.io/badge/-draft-red.svg) Image 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) Input 
 Textual input.
-
 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg) Link 
