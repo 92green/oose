@@ -8,7 +8,8 @@ var elementOverrides = {
     ListItem: 'li',
     Select: 'select',
     Table: 'table',
-    Divider: 'hr'
+    Divider: 'hr',
+    Image: 'img'
 };
 
 var spruceNameOverrides = {
