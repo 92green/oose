@@ -1,15 +1,16 @@
 var SpruceComponent = require('stampy/lib/util/SpruceComponent');
 
 var elementOverrides = {
-    Text: 'span',
+    Button: 'button',
+    Divider: 'hr',
+    Image: 'img',
     Label: 'label',
     Link: 'a',
     List: 'ul',
     ListItem: 'li',
     Select: 'select',
     Table: 'table',
-    Divider: 'hr',
-    Image: 'img'
+    Text: 'span'
 };
 
 var spruceNameOverrides = {
