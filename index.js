@@ -41,7 +41,6 @@ var list = [
     'Login',
     'Logo',
     'Media',
-    'Message',
     'Modal',
     'Navigation',
     'Pagination',
