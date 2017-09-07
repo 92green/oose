@@ -60,7 +60,10 @@ A link to other content.
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) List 
 Core modifiers: `divided` `ordered` `unordered` `nested` 
-Groupings of related content. 
+
+Lists of items. Lists have child elements `List_item`.
+
+Neither the `List` or `List_item` elements should have margins by default. Margins can be applied using a `margin` modifier with an optional SI suffix.
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Media 
 
