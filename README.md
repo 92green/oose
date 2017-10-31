@@ -207,7 +207,7 @@ These are perhaps too bound to specific visual or design choices and will need t
 
 # Categorical State Modifiers
 
-## Ordinal
+## Importance
 ```
 primary
 tertiary
