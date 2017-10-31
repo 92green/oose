@@ -204,3 +204,30 @@ These are perhaps too bound to specific visual or design choices and will need t
               +----------------------------------------------------------------------+
    
 ```
+
+# Categorical State Modifiers
+
+## Ordinal
+```
+primary
+tertiary
+```
+
+## Interactions 
+
+```
+active
+focus
+disabled
+waiting
+hover
+```
+
+## Connotation (suffixable)
+
+```
+positive
+negative
+warning
+edit
+```
