@@ -16,7 +16,8 @@ The unmodified `Box` should not have any margins or padding so it can be used as
 * `hero` - 
 * `success` - 
 * `failure` - 
-* `hairline` - 
+* `alternative` - An alternative style for a box e.g. an alternative background color. Implies that the content of the box is heirarchically adjacent to surrounding content.
+* `bounded` - Applies some kind of boundary so that the boxes contents appear distinct from content around the box. e.g. using a border or background color. Implies that the content of the box is heirarchically beneath surrounding content.
 * `margin<SiPrefix>`
 * `marginTop<SiPrefix>`
 * `marginBottom<SiPrefix>`
@@ -173,3 +174,60 @@ These are perhaps too bound to specific visual or design choices and will need t
 
 - `flood` - Fills the width and height of the parent element.
 - `spread` - Fills the width of the parent element.
+
+
+# Goose Box Model
+
+```
+               Boundary
+              +--------------------------------+-------------------------------------+
+              |                                ^                                     |  ^
+              |                                |                                     |  | Size
+              |                                | Padding                             |  |
+              |                                |                                     |  |
+              |                                v                                     |  |
+              |         +----------------------+-----------------------------+       |  |
+              |         |                                                    |       |  |
+              |         |    ####   ####  #    # ##### ###### #    # #####   |       |  |
+ Margin       |         |   #    # #    # ##   #   #   #      ##   #   #     |       |  |
+              |         |   #      #    # # #  #   #   #####  # #  #   #     |       |  |
+<-----------+ |         |   #      #    # #  # #   #   #      #  # #   #     |       |  |
+              |         |   #    # #    # #   ##   #   #      #   ##   #     |       |  |
+              |         |    ####   ####  #    #   #   ###### #    #   #     |       |  |
+              |         |                                                    |       |  |
+              |         +----------------------------------------------------+       |  |
+              |                                                                      |  |
+              |                                                                      |  |
+              |                                                                      |  |
+              |                                                                      |  |
+              |                                                                      |  v
+              +----------------------------------------------------------------------+
+   
+```
+
+# Categorical State Modifiers
+
+## Importance
+```
+primary
+tertiary
+```
+
+## Interactions 
+
+```
+active
+focus
+disabled
+waiting
+hover
+```
+
+## Connotation (suffixable)
+
+```
+positive
+negative
+warning
+edit
+```
