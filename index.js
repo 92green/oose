@@ -10,12 +10,24 @@ var elementOverrides = {
     ListItem: 'li',
     Select: 'select',
     Table: 'table',
+    TableBody: 'tbody',
+    TableCell: 'td',
+    TableFoot: 'tfoot',
+    TableHead: 'thead',
+    TableHeadCell: 'th',
+    TableRow: 'tr',
     Text: 'span'
 };
 
 var spruceNameOverrides = {
     Column: 'Grid_column',
-    ListItem: 'List_item'
+    ListItem: 'List_item',
+    TableBody: 'Table_body',
+    TableCell: 'Table_cell',
+    TableFoot: 'Table_foot',
+    TableHead: 'Table_head',
+    TableHeadCell: 'Table_headCell',
+    TableRow: 'Table_row'
 };
 
 var list = [
@@ -49,6 +61,13 @@ var list = [
     'Tab',
     'TabSet',
     'Table',
+    'Table',
+    'TableBody',
+    'TableCell',
+    'TableFoot',
+    'TableHead',
+    'TableHeadCell',
+    'TableRow',
     'Terminal',
     'Text',
     'Toggle',
