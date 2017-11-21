@@ -5,7 +5,7 @@ The base of a Spruce component library. It aims to describe the functions of UI 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Badge 
 An un-interactive presentation of state.
-Core modifiers: `success` `failure` `hero` `primary` `$color`
+Core modifiers: `positive` `negative` `hero` `primary` `$color`
 
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Box 
 A divided area of content.
@@ -14,8 +14,8 @@ The unmodified `Box` should not have any margins or padding so it can be used as
 
 ### Modifiers
 * `hero` - 
-* `success` - 
-* `failure` - 
+* `positive` - 
+* `negative` - 
 * `alternative` - An alternative style for a box e.g. an alternative background color. Implies that the content of the box is heirarchically adjacent to surrounding content.
 * `bounded` - Applies some kind of boundary so that the boxes contents appear distinct from content around the box. e.g. using a border or background color. Implies that the content of the box is heirarchically beneath surrounding content.
 * `margin<SiPrefix>`
@@ -27,10 +27,10 @@ The unmodified `Box` should not have any margins or padding so it can be used as
 
 The unmodified `Button` should appear as having netural importance. The `primary` modifier can be used on buttons that need to convey more importance.
 
-Core modifiers: `primary` `success` `failure` `$color` `small` `clear` `solo`
+Core modifiers: `primary` `positive` `negative` `$color` `small` `clear` `solo`
 - `primary` - Makes the button more important.
-- `success` - A button that implies a positive outcome.
-- `failure` - A button that implies a negative outcome.
+- `positive` - A button that implies a positive outcome.
+- `negative` - A button that implies a negative outcome.
 - `solo` - A button that is standalone and does not have siblings within the information heirarchy.
 - `inline` - A button that has a small amount of spacing so buttons may be placed next to each other.
 
@@ -116,9 +116,11 @@ Any text to display on the website, e.g. copy, headings, titles.
   - `marginKilo` margins often go well with `sizeKilo`
   - `margin` margins often go well to space out normal paragraphs
 
-#### Importance
+#### Weight
+- `weightKilo` - Text that appears more important than normal, often bolded.
+- `weightMilli` - Text trhat appears less important than normal, often muted.
+
 - `emphasis` - Styled to demonstrate an emphasis on the text.
-- `muted` - Styled to be muted, less important than normal.
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Typography 
 
@@ -151,8 +153,8 @@ Messages are used for when the website communicates information about its curren
 #### State props
 
 - `state=fetch` - A message that is styled to appear as though something is loading.
-- `state=success` - A message that is styled to appear as though something has succeeded.
-- `state=error` - A message that is styled to appear as though something has failed.
+- `state=positive` - A message that is styled to appear as though something has succeeded.
+- `state=negative` - A message that is styled to appear as though something has failed.
 
 #### Modifiers
 
