@@ -27,7 +27,9 @@ var spruceNameOverrides = {
     TableFoot: 'Table_foot',
     TableHead: 'Table_head',
     TableHeadCell: 'Table_headCell',
-    TableRow: 'Table_row'
+    TableRow: 'Table_row',
+    WindowTitle: 'Window_title',
+    WindowContent: 'Window_content'
 };
 
 var list = [
@@ -53,7 +55,6 @@ var list = [
     'Login',
     'Logo',
     'Media',
-    'Modal',
     'Navigation',
     'Pagination',
     'ProgressBar',
@@ -73,7 +74,11 @@ var list = [
     'Toggle',
     'ToggleSet',
     'Typography',
+    'Window',
+    'WindowTitle',
+    'WindowContent',
     'Wrapper'
+
 ];
 
 function createComponentMap(rr, key) {
