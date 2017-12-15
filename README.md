@@ -124,6 +124,14 @@ Any text to display on the website, e.g. copy, headings, titles.
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Typography 
 
+## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Window 
+
+A combination of a fixed-height title bar and a variable-height content area.
+
+### Children
+* `Window_title`
+* `Window_content`
+
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Wrapper 
 A container that enforces vertical page boundaries, such as a maximum width and page alignment.
 
@@ -161,9 +169,7 @@ Messages are used for when the website communicates information about its curren
 The `appearance` and `state` of a Message are applied as modifiers to a Message.
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Login 
-## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Modal 
 
-A standard layout of components to display as a modal. This refers specifically to the content (title, message, buttons) and not the `Overlay` specific visual features such placement of the modal or the possible darkening of the background.
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Breadcrumbs 
 The representation of one branch of a tree hierarchy
