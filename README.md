@@ -135,9 +135,8 @@ A combination of a fixed-height title bar and a variable-height content area.
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Wrapper 
 A container that enforces vertical page boundaries, such as a maximum width and page alignment.
 
-Core modifiers: `spread` `$breakpoint`
-- `spread` - Fills the width of the parent element.
-- `$breakpoint` - Sets a maximum width of the element, typically with values such as `large`, `small` etc.
+### Modifiers
+- `size<SiPrefix>` - Sets a maximum width to the element.
 
 
 # Too Complex. (Are they molecules?)
