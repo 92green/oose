@@ -1,6 +1,8 @@
 var SpruceComponent = require('stampy/lib/util/SpruceComponent');
 
 var elementOverrides = {
+    Breadcrumb: 'ol',
+    BreadcrumbItem: 'li',
     Button: 'button',
     Divider: 'hr',
     Image: 'img',
@@ -20,7 +22,8 @@ var elementOverrides = {
 };
 
 var spruceNameOverrides = {
-    Column: 'Grid_column',
+    BreadcrumbItem: 'Breadcrumb_item',
+    GridItem: 'Grid_item',
     ListItem: 'List_item',
     TableBody: 'Table_body',
     TableCell: 'Table_cell',
@@ -36,15 +39,16 @@ var list = [
     'Animation',
     'Badge',
     'Box',
-    'Breadcrumbs',
+    'Breadcrumb',
+    'BreadcrumbItem',
     'Button',
     'Checkbox',
     'Choice',
-    'Column',
     'DayPicker',
     'Divider',
     'Dropdown',
     'Grid',
+    'GridItem',
     'Icon',
     'Image',
     'Input',
@@ -81,9 +85,22 @@ var list = [
 
 ];
 
+var componentAliases = {
+    Column: 'GridItem'
+};
+
 function createComponentMap(rr, key) {
     rr[key] = SpruceComponent.default(spruceNameOverrides[key] || key, elementOverrides[key] || 'div');
     return rr;
 }
 
-module.exports = list.reduce(createComponentMap, {});
+function addAliases(rr, key) {
+    rr[key] = rr[componentAliases[key]];
+    return rr;
+};
+
+var componentMap = list.reduce(createComponentMap, {});
+
+module.exports = Object
+    .keys(componentAliases)
+    .reduce(addAliases, componentMap);
