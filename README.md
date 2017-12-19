@@ -53,7 +53,7 @@ The result of a user selection.
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Dropdown 
 
-## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Grid 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Grid 
 
 A `Grid` consists of a series of columns, whose widths are defined by ratios of the `Grid`'s total width. These ratios are divisions of 12, so a 2 column `Grid` would contain 2 columns, each with width 6. By default `Grid`s columns stack on top of each other on small page widths.
 
@@ -76,7 +76,7 @@ A `Grid` consists of a series of columns, whose widths are defined by ratios of 
 Textual input.
 
 
-## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Link 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Link 
 A link to other content.
 
 
@@ -96,7 +96,7 @@ Neither the `List` or `List_item` elements should have margins by default. Margi
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Select 
 A select box to allow the user to choose one or more items from a list. By default goose assumes `react-select` is being used.
 
-## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Table 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Table 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) ToggleSet 
 
@@ -108,7 +108,7 @@ Core modifiers: `active`
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Terminal 
 
-## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Text 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Text 
 
 Any text to display on the website, e.g. copy, headings, titles.
 
@@ -133,9 +133,9 @@ Any text to display on the website, e.g. copy, headings, titles.
 
 - `emphasis` - Styled to demonstrate an emphasis on the text.
 
-## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Typography 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Typography 
 
-## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Window 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Window 
 
 A combination of a fixed-height title bar and a variable-height content area.
 
@@ -143,7 +143,7 @@ A combination of a fixed-height title bar and a variable-height content area.
 * `Window_title`
 * `Window_content`
 
-## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Wrapper 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Wrapper 
 A container that enforces vertical page boundaries, such as a maximum width and page alignment.
 
 ### Modifiers
@@ -154,7 +154,7 @@ A container that enforces vertical page boundaries, such as a maximum width and 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Pagination 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Lightbox 
-## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Overlay 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Overlay 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Navigation 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) DayPicker 
 A way to choose a date and or time. Assumes `react-day-picker`.
