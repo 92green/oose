@@ -121,6 +121,9 @@ Any text to display on the website, e.g. copy, headings, titles.
   - `sizeMilli` roughly corresponds with traditional `small` sizing
   
 #### Margins
+
+`Text-margin` modifiers should only affect the bottom margin. The spacing that might normally be provided by a top margin should instead be provided by a preceding sibling or an ancestor.
+
 - `margin<SiPrefix>`
   - `marginGiga` margins often go well with `sizeGiga`
   - `marginMega` margins often go well with `sizeMega`
