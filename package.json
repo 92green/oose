@@ -1,12 +1,24 @@
 {
-  "name": "goose-css",
-  "version": "0.13.0",
-  "description": "Goose css exporter",
-  "main": "index.js",
-  "repository": "git@github.com:allanhortle/goose.git",
-  "author": "Allan Hortle <allanhortle@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "stampy": "^0.34.0"
+  "private": true,
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "build": "lerna run build --parallel --",
+    "watch": "lerna run watch --parallel --",
+    "flow": "blueflag-test flow",
+    "lint": "blueflag-test lint",
+    "test": "blueflag-test test -M",
+    "coverage": "blueflag-test coverage -M",
+    "test-all": "yarn lint && yarn flow"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.0",
+    "babel-preset-blueflag": "^0.6.0",
+    "proto-babel-plugin-extract-flow-types": "git+ssh://git@github.com/blueflag/proto-babel-plugin-extract-flow-types.git#v0.1.1",
+    "blueflag-test": "^0.18.1",
+    "lerna": "^2.9.0"
   }
 }
