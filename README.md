@@ -1,11 +1,17 @@
 # Goose
 The base of a Spruce component library. It aims to describe the functions of UI components semantically, and without knowledge of how styles will visually appear.
 
-# Core Components
+
+# Components
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Badge 
 An un-interactive presentation of state.
-Core modifiers: `positive` `negative` `hero` `primary` `$color`
+### Modifiers 
+  * `positive`
+  * `negative`
+  * `hero`
+  * `primary`
+  * `$color`
 
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Box 
 A divided area of content.
@@ -34,29 +40,38 @@ The unmodified `Box` should not have any margins or padding so it can be used as
 * `right` - 
 * `top` - 
 
-## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Button 
 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Button
 The unmodified `Button` should appear as having netural importance. The `primary` modifier can be used on buttons that need to convey more importance.
 
-Core modifiers: `primary` `positive` `negative` `$color` `small` `clear` `solo`
-- `primary` - Makes the button more important.
-- `positive` - A button that implies a positive outcome.
-- `negative` - A button that implies a negative outcome.
-- `solo` - A button that is standalone and does not have siblings within the information heirarchy.
-- `inline` - A button that has a small amount of spacing so buttons may be placed next to each other.
+### Modifiers
+ * `primary` - Makes the button more important.
+ * `positive` - A button that implies a positive outcome.
+ * `negative` - A button that implies a negative outcome.
+ * `solo` - A button that is standalone and does not have siblings within the information heirarchy.
+ * `inline` - A button that has a small amount of spacing so buttons may be placed next to each other.
+
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Checkbox 
 ???
 
+
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Choice 
 The result of a user selection.
 
+
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Dialog 
+A small area on screen in which the user is prompted to provide information or select commands.
+
+### Children
+* `Dialog_title`
+* `Dialog_content`
+* `Dialog_actions`
+
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Dropdown 
 
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Grid 
-
 A `Grid` consists of a series of columns, whose widths are defined by ratios of the `Grid`'s total width. These ratios are divisions of 12, so a 2 column `Grid` would contain 2 columns, each with width 6. By default `Grid`s columns stack on top of each other on small page widths.
 
 `Grid`s always have `Grid_column` child elements.
@@ -67,12 +82,16 @@ A `Grid` consists of a series of columns, whose widths are defined by ratios of 
 - `Grid_column-shrink` - Causes a `Column` to be the same width as its contents.
 - `Grid_column-padding` - The padding between each column. Padding is not applied to the left of the leftmost column, or on the right of the rightmost column.
 
+
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Header 
 ???
 
+
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Icon 
 
+
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Image 
+
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Input 
 Textual input.
@@ -89,18 +108,25 @@ Lists of items. Lists have child elements `List_item`.
 
 Neither the `List` or `List_item` elements should have margins by default. Margins can be applied using a `margin` modifier with an optional SI suffix.
 
+
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Media 
+
 
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Overlay 
 
+
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) ProgressBar 
+
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Select 
 A select box to allow the user to choose one or more items from a list. By default goose assumes `react-select` is being used.
 
+
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Table 
 
+
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) ToggleSet 
+
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Toggle
 A user input that can toggle a boolean value.
@@ -108,13 +134,14 @@ A user input that can toggle a boolean value.
 Core modifiers: `active`
 - `active` - The appearance of the toggle while it's true.
 
+
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Terminal 
 
-## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Text 
 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Text 
 Any text to display on the website, e.g. copy, headings, titles.
 
-#### Sizing
+### Sizing
 - `size<SiPrefix>`
   - `sizeGiga` roughly corresponds with traditional `h1` sizing
   - `sizeMega` roughly corresponds with traditional `h2` sizing
@@ -122,8 +149,7 @@ Any text to display on the website, e.g. copy, headings, titles.
   - `sizeHecto` roughly corresponds with traditional `h4` sizing
   - `sizeMilli` roughly corresponds with traditional `small` sizing
   
-#### Margins
-
+### Margins
 `Text-margin` modifiers should only affect the bottom margin. The spacing that might normally be provided by a top margin should instead be provided by a preceding sibling or an ancestor.
 
 - `margin<SiPrefix>`
@@ -132,27 +158,32 @@ Any text to display on the website, e.g. copy, headings, titles.
   - `marginKilo` margins often go well with `sizeKilo`
   - `margin` margins often go well to space out normal paragraphs
 
-#### Weight
+### Weight
 - `weightKilo` - Text that appears more important than normal, often bolded.
 - `weightMilli` - Text trhat appears less important than normal, often muted.
-
 - `emphasis` - Styled to demonstrate an emphasis on the text.
+
 
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Typography 
 
-## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Window 
 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Window 
 A combination of a fixed-height title bar and a variable-height content area.
 
 ### Children
 * `Window_title`
 * `Window_content`
 
+
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Wrapper 
 A container that enforces vertical page boundaries, such as a maximum width and page alignment.
 
 ### Modifiers
 - `size<SiPrefix>` - Sets a maximum width to the element.
+
+
+
+
 
 
 # Too Complex. (Are they molecules?)
@@ -190,12 +221,23 @@ The representation of one branch of a tree hierarchy
 
 
 
+
+
+
+
+
 # Todo: Confused modifiers
 
 These are perhaps too bound to specific visual or design choices and will need to be worked upon before being accepted or rejected from goose.
 
 - `flood` - Fills the width and height of the parent element.
 - `spread` - Fills the width of the parent element.
+
+
+
+
+
+
 
 
 # Goose Box Model
@@ -227,6 +269,11 @@ These are perhaps too bound to specific visual or design choices and will need t
    
 ```
 
+
+
+
+
+
 # Categorical State Modifiers
 
 ## Importance
@@ -236,7 +283,6 @@ tertiary
 ```
 
 ## Interactions 
-
 ```
 active
 focus
@@ -246,7 +292,6 @@ hover
 ```
 
 ## Connotation (suffixable)
-
 ```
 positive
 negative
