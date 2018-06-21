@@ -51,6 +51,8 @@ Core modifiers: `primary` `positive` `negative` `$color` `small` `clear` `solo`
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Choice 
 The result of a user selection.
 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Dialog 
+
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Dropdown 
 
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Grid 
@@ -89,7 +91,7 @@ Neither the `List` or `List_item` elements should have margins by default. Margi
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Media 
 
-## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Overlay 
+## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Overlay 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) ProgressBar 
 
@@ -157,7 +159,6 @@ A container that enforces vertical page boundaries, such as a maximum width and 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Pagination 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Lightbox 
-## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Overlay 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Navigation 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) DayPicker 
 A way to choose a date and or time. Assumes `react-day-picker`.
