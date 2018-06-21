@@ -23,6 +23,9 @@ var elementOverrides = {
 
 var spruceNameOverrides = {
     BreadcrumbItem: 'Breadcrumb_item',
+    DialogTitle: 'Dialog_title',
+    DialogContent: 'Dialog_content',
+    DialogActions: 'Dialog_actions',
     GridItem: 'Grid_item',
     ListItem: 'List_item',
     OverlayContent: 'Overlay_content',
@@ -47,6 +50,10 @@ var list = [
     'Choice',
     'DayPicker',
     'Divider',
+    'Dialog',
+    'DialogTitle',
+    'DialogContent',
+    'DialogActions',
     'Dropdown',
     'Grid',
     'GridItem',
