@@ -10,7 +10,7 @@ import Box from '../Box';
 
 Enzyme.configure({adapter: new Adapter()});
 
-test('basic box', (tt: Object) => {
+test('will render a Box', (tt: Object) => {
 
     tt.is(
         shallow(<Box>Test Box</Box>).text(),
@@ -24,7 +24,7 @@ test('basic box', (tt: Object) => {
     );
 });
 
-test('Box should apply boxProps to outer element', (tt: Object) => {
+test('will apply boxProps to outer element', (tt: Object) => {
     const box = shallow(<Box boxProps={{'data-test': "test"}} />);
 
     tt.is(
@@ -33,7 +33,7 @@ test('Box should apply boxProps to outer element', (tt: Object) => {
     );
 });
 
-test('box classes', (tt: Object) => {
+test('will have correct Spruce classes', (tt: Object) => {
     tt.is(
         shallow(<Box/>).prop('className'),
         'Box',
@@ -60,7 +60,7 @@ test('box classes', (tt: Object) => {
 });
 
 
-test('box styles', (tt: Object) => {
+test('will apply correct margin and padding', (tt: Object) => {
     tt.is(shallow(<Box margin="1 2 3 4" />).prop('style').margin, '1rem 2rem 3rem 4rem');
     tt.is(shallow(<Box margin=" 1 2 " />).prop('style').margin, '1rem 2rem');
 
@@ -75,3 +75,25 @@ test('box styles', (tt: Object) => {
     tt.is(shallow(<Box paddingRight="1" />).prop('style').paddingRight, '1rem');
     tt.is(shallow(<Box paddingTop="1" />).prop('style').paddingTop, '1rem');
 });
+
+
+test('will not apply number/undefined margin or padding', (tt: Object) => {
+    // $FlowFixMe - deliberate misuse of types for testing
+    tt.is(shallow(<Box margin={1} />).prop('style').margin, undefined);
+    // $FlowFixMe - deliberate misuse of types for testing
+    tt.is(shallow(<Box margin={undefined} />).prop('style').margin, undefined);
+    // $FlowFixMe - deliberate misuse of types for testing
+    tt.is(shallow(<Box margin={null} />).prop('style').margin, undefined);
+    // $FlowFixMe - deliberate misuse of types for testing
+    tt.is(shallow(<Box margin={false} />).prop('style').margin, undefined);
+
+    // $FlowFixMe - deliberate misuse of types for testing
+    tt.is(shallow(<Box padding={1} />).prop('style').padding, undefined);
+    // $FlowFixMe - deliberate misuse of types for testing
+    tt.is(shallow(<Box margin={undefined} />).prop('style').margin, undefined);
+    // $FlowFixMe - deliberate misuse of types for testing
+    tt.is(shallow(<Box margin={null} />).prop('style').margin, undefined);
+    // $FlowFixMe - deliberate misuse of types for testing
+    tt.is(shallow(<Box margin={false} />).prop('style').margin, undefined);
+});
+

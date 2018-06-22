@@ -7,8 +7,8 @@
     "flow": "blueflag-test flow",
     "lint": "blueflag-test lint",
     "test": "blueflag-test test -M",
-    "coverage": "blueflag-test coverage -M --min-coverage=10",
-    "test-all": "yarn lint && yarn flow && yarn-coverage"
+    "coverage": "blueflag-test coverage -M",
+    "test-all": "yarn lint && yarn flow && yarn coverage"
   },
   "workspaces": [
     "packages/*"
