@@ -1,0 +1,19 @@
+{
+  "name": "react-goose",
+  "version": "0.13.0",
+  "description": "React Goose components",
+  "repository": "git@github.com:allanhortle/goose.git",
+  "author": "Allan Hortle <allanhortle@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "blueflag-test": "^0.18.1",
+    "stampy": "^0.41.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "private": false,
+  "scripts": {
+    "build": "rm -rf lib && NODE_ENV=production babel src --out-dir lib --ignore **/*-test.js"
+  }
+}
