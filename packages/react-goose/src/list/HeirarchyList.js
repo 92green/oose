@@ -1,4 +1,4 @@
 // @flow
 import SpruceComponent from 'stampy/lib/util/SpruceComponent';
 
-export default SpruceComponent('HeirachyList', 'ul');
+export default SpruceComponent('HeirarchyList', 'ul');
