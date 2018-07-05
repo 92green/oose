@@ -9,7 +9,7 @@ Enzyme.configure({adapter: new Adapter()});
 
 
 test('will return a ul', (t: *): * => {
-    t.is(shallow(<OrderedList>Foo</OrderedList>).type(), 'ul');
+    t.is(shallow(<OrderedList>Foo</OrderedList>).type(), 'ol');
 });
 
 test('will have a className of OrderedList', (t: *): * => {
