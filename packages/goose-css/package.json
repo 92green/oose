@@ -10,6 +10,7 @@
     "stampy": "^0.34.0"
   },
   "scripts": {
+    "prepublishOnly": "yarn build",
     "test": "echo 1"
   }
 }
