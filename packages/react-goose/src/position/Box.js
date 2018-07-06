@@ -18,7 +18,7 @@ import SpruceClassName from 'stampy/lib/util/SpruceClassName';
 
 type Props = {
     boxProps?: *,
-    children?: ChildrenArray<*>,
+    children?: *,
     className?: string, // {ClassName}
     element?: ComponentType<*>|string, // The id of the input HTML element this label corresponds to
     margin?: string,
