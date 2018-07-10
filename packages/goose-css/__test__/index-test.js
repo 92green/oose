@@ -1,27 +1,20 @@
 // @flow
 import type {ComponentType} from 'react';
-import test from 'ava';
 import React from 'react';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import {shallow} from 'enzyme';
-
 import Goose from '../index';
-
-Enzyme.configure({adapter: new Adapter()});
 
 function testComponent(Component: ComponentType<any>, className: string, type: string) {
     const name = Component.displayName || '';
-    test(`${name} will return a ${type}`, (t: *): * => {
-        t.is(shallow(<Component>Foo</Component>).type(), type);
+    test(`${name} will return a ${type}`, () => {
+        expect(shallow(<Component>Foo</Component>).type()).toBe(type);
     });
 
-    test(`${name} will have a className of ${className}`, (t: *): * => {
-        t.is(shallow(<Component>Foo</Component>).prop('className'), className);
+    test(`${name} will have a className of ${className}`, () => {
+        expect(shallow(<Component>Foo</Component>).prop('className')).toBe(className);
     });
 
-    test(`${name} will be a spruce component`, (t: *): * => {
-        t.is(Component.name, 'spruceComponent');
+    test(`${name} will be a spruce component`, () => {
+        expect(Component.name).toBe('spruceComponent');
     });
 }
 

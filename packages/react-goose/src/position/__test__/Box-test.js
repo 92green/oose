@@ -1,99 +1,57 @@
 // @flow
-import test from 'ava';
 import React from 'react';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import {shallow} from 'enzyme';
-
 import Box from '../Box';
 
-
-Enzyme.configure({adapter: new Adapter()});
-
-test('will render a Box', (tt: Object) => {
-
-    tt.is(
-        shallow(<Box>Test Box</Box>).text(),
-        'Test Box',
-        'component text is rendered'
-    );
-
-    tt.true(
-        typeof shallow(<Box>Test Box</Box>).prop('modifier') == 'undefined',
-        'modifier prop is not passed to HTML element'
-    );
+test('will render a Box', () => {
+    const box = shallow(<Box>Test Box</Box>);
+    expect(box).toHaveText('Test Box');
+    expect(box).not.toHaveProp('modifier')
 });
 
-test('will apply boxProps to outer element', (tt: Object) => {
+test('will apply boxProps to outer element', () => {
     const box = shallow(<Box boxProps={{'data-test': "test"}} />);
-
-    tt.is(
-        box.prop('data-test'),
-        "test"
-    );
+    expect(box).toHaveProp('data-test', 'test');
 });
 
-test('will have correct Spruce classes', (tt: Object) => {
-    tt.is(
-        shallow(<Box/>).prop('className'),
-        'Box',
-        'box should have a class of Box'
-    );
+test('will have correct Spruce classes', () => {
+    expect(shallow(<Box/>).prop('className')).toBe('Box');
 
-    tt.is(
-        shallow(<Box spruceName="Thing"/>).prop('className'),
-        'Thing',
-        'box should change class if given a spruceName prop'
-    );
+    expect(shallow(<Box spruceName="Thing"/>).prop('className')).toBe('Thing');
 
-    tt.is(
-        shallow(<Box modifier="large"/>).prop('className'),
-        'Box Box-large',
-        'boxs with modifiers should be rendered with that modifier class'
-    );
+    expect(shallow(<Box modifier="large"/>).prop('className')).toBe('Box Box-large');
 
-    tt.is(
-        shallow(<Box className="foo"/>).prop('className'),
-        'Box foo',
-        'boxs with className should append className'
-    );
-});
+    expect(shallow(<Box className="foo"/>).prop('className')).toBe('Box foo');
+});test('will apply correct margin and padding', () => {
+    expect(shallow(<Box margin="1 2 3 4" />).prop('style').margin).toBe('1rem 2rem 3rem 4rem');
+    expect(shallow(<Box margin=" 1 2 " />).prop('style').margin).toBe('1rem 2rem');
 
-
-test('will apply correct margin and padding', (tt: Object) => {
-    tt.is(shallow(<Box margin="1 2 3 4" />).prop('style').margin, '1rem 2rem 3rem 4rem');
-    tt.is(shallow(<Box margin=" 1 2 " />).prop('style').margin, '1rem 2rem');
-
-    tt.is(shallow(<Box margin="1" />).prop('style').margin, '1rem');
-    tt.is(shallow(<Box marginBottom="1" />).prop('style').marginBottom, '1rem');
-    tt.is(shallow(<Box marginLeft="1" />).prop('style').marginLeft, '1rem');
-    tt.is(shallow(<Box marginRight="1" />).prop('style').marginRight, '1rem');
-    tt.is(shallow(<Box marginTop="1" />).prop('style').marginTop, '1rem');
-    tt.is(shallow(<Box padding="1" />).prop('style').padding, '1rem');
-    tt.is(shallow(<Box paddingBottom="1" />).prop('style').paddingBottom, '1rem');
-    tt.is(shallow(<Box paddingLeft="1" />).prop('style').paddingLeft, '1rem');
-    tt.is(shallow(<Box paddingRight="1" />).prop('style').paddingRight, '1rem');
-    tt.is(shallow(<Box paddingTop="1" />).prop('style').paddingTop, '1rem');
-});
-
-
-test('will not apply number/undefined margin or padding', (tt: Object) => {
+    expect(shallow(<Box margin="1" />).prop('style').margin).toBe('1rem');
+    expect(shallow(<Box marginBottom="1" />).prop('style').marginBottom).toBe('1rem');
+    expect(shallow(<Box marginLeft="1" />).prop('style').marginLeft).toBe('1rem');
+    expect(shallow(<Box marginRight="1" />).prop('style').marginRight).toBe('1rem');
+    expect(shallow(<Box marginTop="1" />).prop('style').marginTop).toBe('1rem');
+    expect(shallow(<Box padding="1" />).prop('style').padding).toBe('1rem');
+    expect(shallow(<Box paddingBottom="1" />).prop('style').paddingBottom).toBe('1rem');
+    expect(shallow(<Box paddingLeft="1" />).prop('style').paddingLeft).toBe('1rem');
+    expect(shallow(<Box paddingRight="1" />).prop('style').paddingRight).toBe('1rem');
+    expect(shallow(<Box paddingTop="1" />).prop('style').paddingTop).toBe('1rem');
+});test('will not apply number/undefined margin or padding', () => {
     // $FlowFixMe - deliberate misuse of types for testing
-    tt.is(shallow(<Box margin={1} />).prop('style').margin, undefined);
+    expect(shallow(<Box margin={1} />).prop('style').margin).toBe(undefined);
     // $FlowFixMe - deliberate misuse of types for testing
-    tt.is(shallow(<Box margin={undefined} />).prop('style').margin, undefined);
+    expect(shallow(<Box margin={undefined} />).prop('style').margin).toBe(undefined);
     // $FlowFixMe - deliberate misuse of types for testing
-    tt.is(shallow(<Box margin={null} />).prop('style').margin, undefined);
+    expect(shallow(<Box margin={null} />).prop('style').margin).toBe(undefined);
     // $FlowFixMe - deliberate misuse of types for testing
-    tt.is(shallow(<Box margin={false} />).prop('style').margin, undefined);
+    expect(shallow(<Box margin={false} />).prop('style').margin).toBe(undefined);
 
     // $FlowFixMe - deliberate misuse of types for testing
-    tt.is(shallow(<Box padding={1} />).prop('style').padding, undefined);
+    expect(shallow(<Box padding={1} />).prop('style').padding).toBe(undefined);
     // $FlowFixMe - deliberate misuse of types for testing
-    tt.is(shallow(<Box margin={undefined} />).prop('style').margin, undefined);
+    expect(shallow(<Box margin={undefined} />).prop('style').margin).toBe(undefined);
     // $FlowFixMe - deliberate misuse of types for testing
-    tt.is(shallow(<Box margin={null} />).prop('style').margin, undefined);
+    expect(shallow(<Box margin={null} />).prop('style').margin).toBe(undefined);
     // $FlowFixMe - deliberate misuse of types for testing
-    tt.is(shallow(<Box margin={false} />).prop('style').margin, undefined);
+    expect(shallow(<Box margin={false} />).prop('style').margin).toBe(undefined);
 });
 

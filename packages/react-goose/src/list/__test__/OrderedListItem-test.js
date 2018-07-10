@@ -1,21 +1,15 @@
 // @flow
-import test from 'ava';
 import React from 'react';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import {shallow} from 'enzyme';
 import OrderedListItem from '../OrderedListItem';
-Enzyme.configure({adapter: new Adapter()});
 
-
-test('will return a li', (t: *): * => {
-    t.is(shallow(<OrderedListItem>Foo</OrderedListItem>).type(), 'li');
+test('will return a li', () => {
+    expect(shallow(<OrderedListItem>Foo</OrderedListItem>).type()).toBe('li');
 });
 
-test('will have a className of OrderedListItem', (t: *): * => {
-    t.is(shallow(<OrderedListItem>Foo</OrderedListItem>).prop('className'), 'OrderedList_item');
+test('will have a className of OrderedListItem', () => {
+    expect(shallow(<OrderedListItem>Foo</OrderedListItem>).prop('className')).toBe('OrderedList_item');
 });
 
-test('will be a spruce component', (t: *): * => {
-    t.is(OrderedListItem.name, 'spruceComponent');
+test('will be a spruce component', () => {
+    expect(OrderedListItem.name).toBe('spruceComponent');
 });

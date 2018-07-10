@@ -7,11 +7,15 @@
 .cache
 *.orig
 *.log
+tags
+yalc.lock
 
 
 # Folders
 coverage
+flow-coverage
 dist
 lib
+.yalc
 **/node_modules
 public

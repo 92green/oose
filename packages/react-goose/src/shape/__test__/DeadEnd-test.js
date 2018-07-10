@@ -1,11 +1,6 @@
 // @flow
-import test from 'ava';
 import React from 'react';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import {shallow} from 'enzyme';
 import DeadEnd from '../DeadEnd';
-Enzyme.configure({adapter: new Adapter()});
 
 const thunks = {
     title: () => 'Title',
@@ -13,54 +8,32 @@ const thunks = {
     action: () => 'Action'
 };
 
-test('will render a DeadEnd', (t: *) => {
-    t.true(
-        typeof shallow(<DeadEnd {...thunks}>Test DeadEnd</DeadEnd>).prop('modifier') == 'undefined',
-        'modifier prop is not passed to HTML element'
-    );
+test('will render a DeadEnd', () => {
+    expect(
+        typeof shallow(<DeadEnd {...thunks}>Test DeadEnd</DeadEnd>).prop('modifier') == 'undefined'
+    ).toBe(true);
 });
 
-test('will extra props to overlay outer div', (t: *) => {
-    t.is(shallow(<DeadEnd {...thunks} style="foo" />).prop('style'), 'foo');
+test('will extra props to overlay outer div', () => {
+    expect(shallow(<DeadEnd {...thunks} style="foo" />).prop('style')).toBe('foo');
 });
 
-test('will contain title content and action children', (t: *) => {
+test('will contain title content and action children', () => {
     const deadEnd = shallow(<DeadEnd {...thunks} />);
-    t.is(
-        deadEnd.find('.DeadEnd_title').text(),
-        'Title'
-    );
+    expect(deadEnd.find('.DeadEnd_title').text()).toBe('Title');
 
-    t.is(
-        deadEnd.find('.DeadEnd_content').text(),
-        'Content'
-    );
+    expect(deadEnd.find('.DeadEnd_content').text()).toBe('Content');
 
-    t.is(
-        deadEnd.find('.DeadEnd_action').text(),
-        'Action'
-    );
+    expect(deadEnd.find('.DeadEnd_action').text()).toBe('Action');
 });
 
-test('will have correct Spruce classes', (t: *) => {
-    t.is(
-        shallow(<DeadEnd {...thunks}/>).prop('className'),
-        'DeadEnd'
-    );
+test('will have correct Spruce classes', () => {
+    expect(shallow(<DeadEnd {...thunks}/>).prop('className')).toBe('DeadEnd');
 
-    t.is(
-        shallow(<DeadEnd {...thunks} spruceName="Thing"/>).prop('className'),
-        'Thing'
-    );
+    expect(shallow(<DeadEnd {...thunks} spruceName="Thing"/>).prop('className')).toBe('Thing');
 
-    t.is(
-        shallow(<DeadEnd {...thunks} modifier="large"/>).prop('className'),
-        'DeadEnd DeadEnd-large'
-    );
+    expect(shallow(<DeadEnd {...thunks} modifier="large"/>).prop('className')).toBe('DeadEnd DeadEnd-large');
 
-    t.is(
-        shallow(<DeadEnd {...thunks} className="foo"/>).prop('className'),
-        'DeadEnd foo'
-    );
+    expect(shallow(<DeadEnd {...thunks} className="foo"/>).prop('className')).toBe('DeadEnd foo');
 });
 
