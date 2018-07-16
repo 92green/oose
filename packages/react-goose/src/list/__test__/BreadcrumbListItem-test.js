@@ -1,21 +1,15 @@
 // @flow
-import test from 'ava';
 import React from 'react';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import {shallow} from 'enzyme';
 import BreadcrumbListItem from '../BreadcrumbListItem';
-Enzyme.configure({adapter: new Adapter()});
 
-
-test('will return a li', (t: *): * => {
-    t.is(shallow(<BreadcrumbListItem>Foo</BreadcrumbListItem>).type(), 'li');
+test('will return a li', () => {
+    expect(shallow(<BreadcrumbListItem>Foo</BreadcrumbListItem>).type()).toBe('li');
 });
 
-test('will have a className of BreadcrumbListItem', (t: *): * => {
-    t.is(shallow(<BreadcrumbListItem>Foo</BreadcrumbListItem>).prop('className'), 'BreadcrumbList_item');
+test('will have a className of BreadcrumbListItem', () => {
+    expect(shallow(<BreadcrumbListItem>Foo</BreadcrumbListItem>).prop('className')).toBe('BreadcrumbList_item');
 });
 
-test('will be a spruce component', (t: *): * => {
-    t.is(BreadcrumbListItem.name, 'spruceComponent');
+test('will be a spruce component', () => {
+    expect(BreadcrumbListItem.name).toBe('spruceComponent');
 });

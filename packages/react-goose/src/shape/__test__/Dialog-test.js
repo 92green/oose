@@ -1,11 +1,6 @@
 // @flow
-import test from 'ava';
 import React from 'react';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import {shallow} from 'enzyme';
 import Dialog from '../Dialog';
-Enzyme.configure({adapter: new Adapter()});
 
 const thunks = {
     title: () => 'Title',
@@ -13,54 +8,32 @@ const thunks = {
     action: () => 'Action'
 };
 
-test('will render a Dialog', (t: *) => {
-    t.true(
-        typeof shallow(<Dialog {...thunks}>Test Dialog</Dialog>).prop('modifier') == 'undefined',
-        'modifier prop is not passed to HTML element'
-    );
+test('will render a Dialog', () => {
+    expect(
+        typeof shallow(<Dialog {...thunks}>Test Dialog</Dialog>).prop('modifier') == 'undefined'
+    ).toBe(true);
 });
 
-test('will extra props to overlay outer div', (t: *) => {
-    t.is(shallow(<Dialog {...thunks} style="foo" />).prop('style'), 'foo');
+test('will extra props to overlay outer div', () => {
+    expect(shallow(<Dialog {...thunks} style="foo" />).prop('style')).toBe('foo');
 });
 
-test('will contain title content and action children', (t: *) => {
+test('will contain title content and action children', () => {
     const deadEnd = shallow(<Dialog {...thunks} />);
-    t.is(
-        deadEnd.find('.Dialog_title').text(),
-        'Title'
-    );
+    expect(deadEnd.find('.Dialog_title').text()).toBe('Title');
 
-    t.is(
-        deadEnd.find('.Dialog_content').text(),
-        'Content'
-    );
+    expect(deadEnd.find('.Dialog_content').text()).toBe('Content');
 
-    t.is(
-        deadEnd.find('.Dialog_action').text(),
-        'Action'
-    );
+    expect(deadEnd.find('.Dialog_action').text()).toBe('Action');
 });
 
-test('will have correct Spruce classes', (t: *) => {
-    t.is(
-        shallow(<Dialog {...thunks}/>).prop('className'),
-        'Dialog'
-    );
+test('will have correct Spruce classes', () => {
+    expect(shallow(<Dialog {...thunks}/>).prop('className')).toBe('Dialog');
 
-    t.is(
-        shallow(<Dialog {...thunks} spruceName="Thing"/>).prop('className'),
-        'Thing'
-    );
+    expect(shallow(<Dialog {...thunks} spruceName="Thing"/>).prop('className')).toBe('Thing');
 
-    t.is(
-        shallow(<Dialog {...thunks} modifier="large"/>).prop('className'),
-        'Dialog Dialog-large'
-    );
+    expect(shallow(<Dialog {...thunks} modifier="large"/>).prop('className')).toBe('Dialog Dialog-large');
 
-    t.is(
-        shallow(<Dialog {...thunks} className="foo"/>).prop('className'),
-        'Dialog foo'
-    );
+    expect(shallow(<Dialog {...thunks} className="foo"/>).prop('className')).toBe('Dialog foo');
 });
 

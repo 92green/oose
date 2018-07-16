@@ -1,22 +1,16 @@
 // @flow
-import test from 'ava';
 import React from 'react';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import {shallow} from 'enzyme';
 import Link from '../Link';
-Enzyme.configure({adapter: new Adapter()});
 
-
-test('will return a a', (t: *): * => {
-    t.is(shallow(<Link>Foo</Link>).type(), 'a');
+test('will return a a', () => {
+    expect(shallow(<Link>Foo</Link>).type()).toBe('a');
 });
 
-test('will have a className of Link', (t: *): * => {
-    t.is(shallow(<Link>Foo</Link>).prop('className'), 'Link');
+test('will have a className of Link', () => {
+    expect(shallow(<Link>Foo</Link>).prop('className')).toBe('Link');
 });
 
-test('will be a spruce component', (t: *): * => {
-    t.is(Link.name, 'spruceComponent');
+test('will be a spruce component', () => {
+    expect(Link.name).toBe('spruceComponent');
 });
 
