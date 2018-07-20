@@ -16,7 +16,7 @@ type LayoutProps = {
     [key: string]: LayoutElement
 };
 
-export default class Structure<Props, State = void> extends React.Component<$Diff<BaseProps, Props>, State> {
+export default class Layout<Props, State = void> extends React.Component<$Diff<BaseProps, Props>, State> {
     static elements: Array<string>;
     static layout: ComponentType<LayoutProps>;
     render(): Node {
@@ -26,11 +26,11 @@ export default class Structure<Props, State = void> extends React.Component<$Dif
         const FLOWBUG_this: Object = this;
 
         const {layout, elements = {}} = this.props;
-        const Layout = layout || this.constructor.layout;
+        const LayoutComponent = layout || this.constructor.layout;
         const baseElements = this.constructor.elements.reduce((props: *, element: string): * => {
             let fn = FLOWBUG_this[element];
             if(!fn) {
-                throw new Error(`"${element}" method on Structure is not defined`);
+                throw new Error(`Layout element method '${element}' on ${this.constructor.name} is not defined`);
             }
             return {
                 ...props,
@@ -38,6 +38,6 @@ export default class Structure<Props, State = void> extends React.Component<$Dif
             };
         }, {});
 
-        return <Layout {...baseElements} {...elements} />;
+        return <LayoutComponent {...baseElements} {...elements} />;
     }
 }
