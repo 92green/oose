@@ -3,7 +3,15 @@ import type {Node} from 'react';
 import React from 'react';
 import SpruceClassName from 'stampy/lib/util/SpruceClassName';
 
-export default function Window(props: *): Node {
+type Props = {
+    title: () => Node,
+    content: () => Node,
+    className?: string,
+    modifier?: string,
+    spruceName?: string
+};
+
+export default function Window(props: Props): Node {
     const {
         className,
         modifier,

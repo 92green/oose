@@ -3,7 +3,16 @@ import type {Node} from 'react';
 import React from 'react';
 import SpruceClassName from 'stampy/lib/util/SpruceClassName';
 
-export default function Overlay(props: *): Node {
+type Props = {
+    children?: *,
+    parent?: string,
+    element?: *,
+    className?: string,
+    modifier?: string,
+    spruceName?: string
+};
+
+export default function Overlay(props: Props): Node {
     const {
         children,
         className,

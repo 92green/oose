@@ -3,7 +3,16 @@ import type {Node} from 'react';
 import React from 'react';
 import SpruceClassName from 'stampy/lib/util/SpruceClassName';
 
-export default function DeadEnd(props: *): Node {
+type Props = {
+    action: () => Node,
+    content: () => Node,
+    title: () => Node,
+    className?: string,
+    modifier?: string,
+    spruceName?: string
+};
+
+export default function DeadEnd(props: Props): Node {
     const {
         className,
         modifier,
