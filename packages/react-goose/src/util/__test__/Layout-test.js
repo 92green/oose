@@ -1,9 +1,9 @@
 // @flow
 import React from 'react';
-import Structure from '../Structure';
+import Layout from '../Layout';
 
 test('will render elements to layout', () => {
-    class Component extends Structure<Object> {
+    class Component extends Layout<Object> {
         static elements = ['foo', 'bar'];
         static layout = ({foo, bar}: *) => <div>
             <div className="foo">{foo()}</div>
@@ -20,16 +20,17 @@ test('will render elements to layout', () => {
 
 
 test('will throw if layout elements are not defined', () => {
-    class Component extends Structure<Object> {
+    class FooLayout extends Layout<Object> {
         static elements = ['foo'];
         static layout = () => null;
     }
 
-    expect(() => shallow(<Component />)).toThrow(/foo/);
+    expect(() => shallow(<FooLayout />)).toThrow(/foo/);
+    expect(() => shallow(<FooLayout />)).toThrow(/FooLayout/);
 });
 
 test('layout elements can be overridden through props.elements', () => {
-    class Component extends Structure<Object> {
+    class Component extends Layout<Object> {
         static elements = ['foo'];
         static layout = ({foo}: *) => <div>
             <div className="foo">{foo()}</div>
@@ -47,7 +48,7 @@ test('layout elements can be overridden through props.elements', () => {
 });
 
 test('layout can be replaced via props.layout', () => {
-    class Component extends Structure<Object> {
+    class Component extends Layout<Object> {
         static elements = ['foo'];
         static layout = ({foo}: *) => <div>
             <div className="foo">{foo()}</div>
