@@ -16,7 +16,7 @@ type LayoutProps = {
     [key: string]: LayoutElement
 };
 
-export default class Layout<Props, State = void> extends React.Component<$Diff<BaseProps, Props>, State> {
+export default class Layout<Props, State = void> extends React.Component<BaseProps & Props, State> {
     static elements: Array<string>;
     static layout: ComponentType<LayoutProps>;
     render(): Node {
