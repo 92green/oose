@@ -9,7 +9,8 @@ type BaseProps = {
     layout?: ComponentType<*>,
     elements?: {
         [key: string]: LayoutElement
-    }
+    },
+    key?: string|number
 };
 
 type LayoutProps = {
