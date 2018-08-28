@@ -9,7 +9,8 @@ type BaseProps = {
     layout?: ComponentType<*>,
     elements?: {
         [key: string]: LayoutElement
-    }
+    },
+    key?: string|number
 };
 
 type LayoutProps = {
@@ -25,7 +26,7 @@ export default class Layout<Props, State = void> extends React.Component<BasePro
         // This line tricks flow into thinking it's just an object
         const FLOWBUG_this: Object = this;
 
-        const {layout, elements = {}} = this.props;
+        const {layout, elements = {}, key} = this.props;
         const LayoutComponent = layout || this.constructor.layout;
         const baseElements = this.constructor.elements.reduce((props: *, element: string): * => {
             let fn = FLOWBUG_this[element];
@@ -38,6 +39,6 @@ export default class Layout<Props, State = void> extends React.Component<BasePro
             };
         }, {});
 
-        return <LayoutComponent {...baseElements} {...elements} />;
+        return <LayoutComponent {...baseElements} {...elements} key={key} />;
     }
 }
