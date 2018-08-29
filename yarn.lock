@@ -6376,9 +6376,9 @@ stampy@^0.34.0:
     is-plain-object "^2.0.3"
     url-search-params "^0.9.0"
 
-stampy@^0.41.0:
-  version "0.41.0"
-  resolved "https://registry.yarnpkg.com/stampy/-/stampy-0.41.0.tgz#06b35daef74d8c9606822095df28ea0e2f36d0a9"
+stampy@^0.42.0:
+  version "0.42.0"
+  resolved "https://registry.yarnpkg.com/stampy/-/stampy-0.42.0.tgz#3f1133bd7f3b95b84e0a6c446bc6affa28681a1e"
   dependencies:
     blueflag-test "^0.18.1"
     classnames "^2.2.5"
