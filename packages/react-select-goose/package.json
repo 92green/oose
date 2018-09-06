@@ -5,7 +5,7 @@
   "repository": "github:allanhortle/goose",
   "author": "Allan Hortle <allanhortle@gmail.com>",
   "license": "MIT",
-  "main": "./lib/Select",
+  "main": "./lib/Select.js",
   "files": [
     "lib"
   ],
