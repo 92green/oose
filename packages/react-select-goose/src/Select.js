@@ -5,13 +5,14 @@ import CreateSelect from 'react-select/lib/Creatable';
 import get from 'unmutable/lib/get';
 import set from 'unmutable/lib/set';
 import map from 'unmutable/lib/map';
+import first from 'unmutable/lib/first';
 import filter from 'unmutable/lib/filter';
 import flatMap from 'unmutable/lib/flatMap';
-import first from 'unmutable/lib/first';
+import doIf from 'unmutable/lib/doIf';
 import toArray from 'unmutable/lib/toArray';
 import pipeWith from 'unmutable/lib/util/pipeWith';
+import pipe from 'unmutable/lib/util/pipe';
 import isIndexed from 'unmutable/lib/util/isIndexed';
-import doIf from 'unmutable/lib/doIf';
 import unique from 'unmutable/lib/unique';
 
 type Props = {
@@ -70,7 +71,10 @@ export default class ReactSelectGoose extends React.Component<Props> {
             doIf(
                 () => multi,
                 flatMap(createValueFromId),
-                createValueFromId
+                pipe(
+                    createValueFromId,
+                    first()
+                )
             ),
             this.props.onChange
         );
