@@ -57,7 +57,7 @@ export default class ReactSelectGoose extends React.Component<Props> {
                     map(_ => _.trim()),
                     unique(),
                     // ignore empty and already selected
-                    filter(vv => vv && !this.props.value.includes(vv)),
+                    filter(vv => vv && !(this.props.value || []).includes(vv)),
                     map(value => createValue({value, label: value}))
                 );
             }
@@ -95,7 +95,7 @@ export default class ReactSelectGoose extends React.Component<Props> {
 
         const parsedValue = pipeWith(
             value,
-            doIf(not(isIndexed), value => [value]),
+            doIf(not(isIndexed), value => value ? [value] : []),
             map(option => ({
                 label: getLabel(option),
                 value: getId(option)

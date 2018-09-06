@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "yarn lerna run build --parallel --",
-    "watch": "yarn lerna run watch --parallel --",
+    "build": "yarn lerna run build --parallel",
+    "watch": "yarn lerna run watch --parallel",
     "flow": "blueflag-test flow",
     "flow-coverage": "blueflag-test flow-coverage",
     "lint": "blueflag-test lint",
