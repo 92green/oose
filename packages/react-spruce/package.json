@@ -1,19 +1,17 @@
 {
-  "name": "react-select-goose",
-  "version": "0.1.3",
-  "description": "React Select with Goose class names",
-  "repository": "github:allanhortle/oose",
+  "name": "react-spruce",
+  "version": "0.0.0",
+  "description": "React Goose components",
+  "repository": "git@github.com:allanhortle/oose.git",
   "author": "Allan Hortle <allanhortle@gmail.com>",
   "license": "MIT",
-  "main": "./lib/Select.js",
+  "dependencies": {
+    "classnames": "^2.2.6"
+  },
   "files": [
     "lib"
   ],
   "private": false,
-  "dependencies": {
-    "react-select": "^2.0.0",
-    "unmutable": "^0.34.1"
-  },
   "scripts": {
     "prepublishOnly": "yarn build",
     "build": "rm -rf lib && NODE_ENV=production babel src --out-dir lib --ignore **/*-test.js"

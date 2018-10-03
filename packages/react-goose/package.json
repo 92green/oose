@@ -2,7 +2,7 @@
   "name": "react-goose",
   "version": "0.5.0",
   "description": "React Goose components",
-  "repository": "git@github.com:allanhortle/goose.git",
+  "repository": "git@github.com:allanhortle/oose.git",
   "author": "Allan Hortle <allanhortle@gmail.com>",
   "license": "MIT",
   "dependencies": {
