@@ -1,0 +1,19 @@
+{
+  "name": "react-spruce",
+  "version": "0.0.0",
+  "description": "React Goose components",
+  "repository": "git@github.com:allanhortle/oose.git",
+  "author": "Allan Hortle <allanhortle@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6"
+  },
+  "files": [
+    "lib"
+  ],
+  "private": false,
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "build": "rm -rf lib && NODE_ENV=production babel src --out-dir lib --ignore **/*-test.js"
+  }
+}
