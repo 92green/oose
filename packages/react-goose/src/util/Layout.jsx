@@ -8,7 +8,7 @@ import React from 'react';
 type BaseProps = {
     layout?: ComponentType<*>,
     elements?: {
-        [key: string]: LayoutElement
+        [key: string]: LayoutElement | {render: LayoutElement, data: Function}
     }
 };
 
@@ -32,6 +32,12 @@ export default class Layout<Props, State = void> extends React.Component<BasePro
             if(!fn) {
                 throw new Error(`Layout element method '${element}' on ${this.constructor.name} is not defined`);
             }
+
+            if(typeof fn === 'object') {
+                const parts = {...fn};
+                fn = () => parts.render(parts.data(this.props));
+            }
+
             return {
                 ...props,
                 [element]: fn

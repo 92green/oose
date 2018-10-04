@@ -47,6 +47,23 @@ test('layout elements can be overridden through props.elements', () => {
     expect(wrapper.find('.foo')).toHaveText('NOT FOO');
 });
 
+test('layout elements can be a data/render object', () => {
+    class Component extends Layout<Object> {
+        static elements = ['foo'];
+        static layout = ({foo}: *) => <div>
+            <div className="foo">{foo()}</div>
+        </div>;
+        foo = {
+            data: props => ({text: props.text, extra: 'bar'}),
+            render: (props) => props.text + props.extra
+        }
+    }
+
+
+    const wrapper = shallow(<Component text="foo"/>).dive();
+    expect(wrapper.find('.foo')).toHaveText('foobar');
+});
+
 test('layout can be replaced via props.layout', () => {
     class Component extends Layout<Object> {
         static elements = ['foo'];
