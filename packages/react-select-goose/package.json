@@ -2,7 +2,7 @@
   "name": "react-select-goose",
   "version": "0.1.3",
   "description": "React Select with Goose class names",
-  "repository": "github:allanhortle/oose",
+  "repository": "github:blueflag/oose",
   "author": "Allan Hortle <allanhortle@gmail.com>",
   "license": "MIT",
   "main": "./lib/Select.js",

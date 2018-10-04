@@ -3,7 +3,7 @@
   "version": "0.14.3",
   "description": "Goose css exporter",
   "main": "index.js",
-  "repository": "git@github.com:allanhortle/oose.git",
+  "repository": "git@github.com:blueflag/oose.git",
   "author": "Allan Hortle <allanhortle@gmail.com>",
   "license": "MIT",
   "dependencies": {
