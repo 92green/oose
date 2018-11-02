@@ -2,6 +2,7 @@
 import type {Node} from 'react';
 import React from 'react';
 import CreateSelect from 'react-select/lib/Creatable';
+import ReactSelect from 'react-select';
 import get from 'unmutable/lib/get';
 import set from 'unmutable/lib/set';
 import map from 'unmutable/lib/map';
@@ -16,6 +17,7 @@ import isIndexed from 'unmutable/lib/util/isIndexed';
 import unique from 'unmutable/lib/unique';
 
 type Props = {
+    create?: boolean,
     clearable?: boolean,
     components?: Object,
     createValue?: Function,
@@ -88,6 +90,8 @@ export default class ReactSelectGoose extends React.Component<Props> {
         const {getId = get('id')} = this.props;
         const {getLabel = get('name')} = this.props;
 
+        const Component = this.props.create ? CreateSelect : ReactSelect;
+
         const parsedOptions = pipeWith(
             options,
             map(option => ({
@@ -107,7 +111,7 @@ export default class ReactSelectGoose extends React.Component<Props> {
             multi ? toArray() : first()
         );
 
-        return <CreateSelect
+        return <Component
             isMulti={multi}
             menuPortalTarget={menuPortalTarget}
             closeMenuOnSelect={!multi}
