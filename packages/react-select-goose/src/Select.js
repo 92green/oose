@@ -27,7 +27,8 @@ type Props = {
     multi?: boolean,
     onChange: Function,
     options: *,
-    value: *
+    value: *,
+    placeholder?: string
 };
 
 const overriddenStyles = {
@@ -89,6 +90,7 @@ export default class ReactSelectGoose extends React.Component<Props> {
         const {menuPortalTarget} = this.props;
         const {getId = get('id')} = this.props;
         const {getLabel = get('name')} = this.props;
+        const {placeholder} = this.props;
 
         const Component = this.props.create ? CreateSelect : ReactSelect;
 
@@ -121,6 +123,7 @@ export default class ReactSelectGoose extends React.Component<Props> {
             classNamePrefix="Select"
             onChange={this.onChange}
             styles={overriddenStyles}
+            placeholder={placeholder}
         />;
     }
 }
