@@ -1,6 +1,6 @@
 {
   "name": "react-select-goose",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "React Select with Goose class names",
   "repository": "github:blueflag/oose",
   "author": "Allan Hortle <allanhortle@gmail.com>",
