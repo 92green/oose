@@ -23,6 +23,7 @@ type Props = {
     createValue?: Function,
     getId?: Function,
     getLabel?: Function,
+    loading?: boolean,
     menuPortalTarget?: *,
     multi?: boolean,
     onChange: Function,
@@ -84,6 +85,7 @@ export default class ReactSelectGoose extends React.Component<Props> {
     };
     render(): Node {
         const {multi} = this.props;
+        const {loading} = this.props;
         const {options} =  this.props;
         const {value} = this.props;
         const {clearable} = this.props;
@@ -115,6 +117,7 @@ export default class ReactSelectGoose extends React.Component<Props> {
 
         return <Component
             isMulti={multi}
+            isLoading={loading}
             menuPortalTarget={menuPortalTarget}
             closeMenuOnSelect={!multi}
             isClearable={clearable}
