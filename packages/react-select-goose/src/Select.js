@@ -16,7 +16,7 @@ import pipe from 'unmutable/lib/util/pipe';
 import isIndexed from 'unmutable/lib/util/isIndexed';
 import unique from 'unmutable/lib/unique';
 
-type Props = {
+type BaseProps = {
     create?: boolean,
     clearable?: boolean,
     components?: Object,
@@ -25,12 +25,22 @@ type Props = {
     getLabel?: Function,
     loading?: boolean,
     menuPortalTarget?: *,
-    multi?: boolean,
     onChange: Function,
     options: *,
-    value: *,
     placeholder?: string
 };
+
+type MultiProps = {
+    multi?: false | null,
+    value?: string | Object
+} & BaseProps;
+
+type NonMultiProps = {
+    multi: true,
+    value?: Array<string | Object>
+} & BaseProps;
+
+type Props = MultiProps | NonMultiProps;
 
 const overriddenStyles = {
     menuPortal: set('zIndex', 9999999),
