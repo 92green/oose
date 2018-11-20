@@ -30,12 +30,12 @@ type BaseProps = {
     placeholder?: string
 };
 
-type MultiProps = {
+type NonMultiProps = {
     multi?: false | null,
     value?: string | Object
 } & BaseProps;
 
-type NonMultiProps = {
+type MultiProps = {
     multi: true,
     value?: Array<string | Object>
 } & BaseProps;
