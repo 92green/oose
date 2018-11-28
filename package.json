@@ -9,9 +9,15 @@
     "test": "yarn jest",
     "test-all": "yarn lint && yarn flow && yarn test && yarn flow-coverage"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/gatsby*",
+      "**/gatsby*/**"
+    ]
+  },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.0",

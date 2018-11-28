@@ -4,7 +4,6 @@
     ],
     "ignore": [
         "./lib",
-        "./example"
     ],
     "env": {
         "production": {

@@ -30,6 +30,7 @@
     "mdxc": "^1.1.1",
     "prismjs": "^1.11.0",
     "react-cool-storage": "^0.1.1",
+    "react-dataparcels": "^0.17.0",
     "react-flip-move": "^3.0.2",
     "react-helmet": "^5.2.0",
     "react-lifecycles-compat": "^3.0.4",
