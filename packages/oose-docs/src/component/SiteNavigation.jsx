@@ -12,9 +12,13 @@ type Props = {
 
 export default () => <NavigationList modifier="margin">
     <NavigationListItem>
-        <Link to="/">Dataparcels</Link>
+        <Link to="/">Oose</Link>
     </NavigationListItem>
     <NavigationListItem>
-        <a className="Link" href="https://github.com/blueflag/dataparcels">Github</a>
+        <a className="Link" href="https://github.com/blueflag/oose">Github</a>
     </NavigationListItem>
+    <NavigationListItem>- <Link to="/api/Moose">Moose</Link></NavigationListItem>
+    <NavigationListItem>- <Link to="/api/Goose">Goose</Link></NavigationListItem>
+    <NavigationListItem>- <Link to="/api/Spruce">Spruce</Link></NavigationListItem>
+    <NavigationListItem>- <Link to="/api/Bruce">Bruce</Link></NavigationListItem>
 </NavigationList>;

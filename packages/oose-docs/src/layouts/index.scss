@@ -4,12 +4,28 @@
 @import '~dcme-style/lib/all';
 @include DcmeConfig;
 
+$moose: #713e21 !global;
+$goose: #bf5a30 !global;
+$spruce: #055a48 !global;
+$bruce: #2c3b77 !global;
+
 @include DcmeBase;
 @include DcmeBox {
+    &-landing {
+        box-shadow:
+            inset 0 .5rem 0 $moose,
+            inset 0 1rem 0 $goose,
+            inset 0 1.5rem 0 $spruce,
+            inset 0 2rem 0 $bruce
+        ;
+
+    }
+
     &-example {
         margin-left: -2rem;
         margin-right: -2rem;
     }
+
     &-exampleInner {
         border: 2px dashed grey(90);
         padding: 2rem;
@@ -64,4 +80,11 @@
     }
 }
 @include DcmeTypography;
-@include DcmeWrapper;
+@include DcmeWrapper {
+    &-moose {
+        color: darken($moose, 16);
+        .Link {
+            color: $moose;
+        }
+    }
+}

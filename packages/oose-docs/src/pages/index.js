@@ -10,18 +10,17 @@ import IconParcel from 'content/parcelinverted.gif';
 import APIExamples from 'content/APIExamples.md';
 
 export default () => <Box>
-    <Box modifier="invertedCopy invertedBackground">
+    <Box modifier="invertedCopy invertedBackground landing">
         <Wrapper>
             <CenteredLanding
                 modifier="heightHalf"
-                top={() => <Text element="h1" modifier="sizeTera superDuper">dataparcels</Text>}
+                top={() => <Text element="h1" modifier="sizeTera superDuper">oose</Text>}
                 bottom={() => <Grid>
                     <GridItem modifier="8 padding">
-                        <Text element="p" modifier="monospace margin">A library for editing data structures that works really well with React.</Text>
-                        <Text element="p" modifier="monospace"><HtmlLink href="https://github.com/blueflag/dataparcels">github</HtmlLink> | <HtmlLink href="https://www.npmjs.com/package/react-dataparcels">npm</HtmlLink> | <HtmlLink href="#API">api documentation</HtmlLink></Text>
+                        <Text element="p" modifier="monospace margin">A collection of UI libraries and methodologies.</Text>
+                        <Text element="p" modifier="monospace"><HtmlLink href="https://github.com/blueflag/oose">github</HtmlLink> | <HtmlLink href="#API">documentation</HtmlLink></Text>
                     </GridItem>
                     <GridItem modifier="4 padding">
-                        <Image modifier="center logo" src={IconParcel} />
                     </GridItem>
                 </Grid>}
             />
@@ -38,9 +37,10 @@ export default () => <Box>
                 nav={() => <NavigationList>
                     <NavigationListItem><HtmlLink href={`#What-is-it`}>What is it?</HtmlLink></NavigationListItem>
                     <NavigationListItem><HtmlLink href={`#Getting-Started`}>Getting Started</HtmlLink></NavigationListItem>
-                    <NavigationListItem><HtmlLink href={`#Examples`}>Examples</HtmlLink></NavigationListItem>
-                    <NavigationListItem><HtmlLink href={`#API`}>API</HtmlLink></NavigationListItem>
-                    <NavigationListItem><HtmlLink href={`#API-Examples`}>API Examples</HtmlLink></NavigationListItem>
+                    <NavigationListItem><HtmlLink href={`#Moose`}>Moose</HtmlLink></NavigationListItem>
+                    <NavigationListItem><HtmlLink href={`#Goose`}>Goose</HtmlLink></NavigationListItem>
+                    <NavigationListItem><HtmlLink href={`#Spruce`}>Spruce</HtmlLink></NavigationListItem>
+                    <NavigationListItem><HtmlLink href={`#Bruce`}>Bruce</HtmlLink></NavigationListItem>
                 </NavigationList>}
             />
             <Wrapper>

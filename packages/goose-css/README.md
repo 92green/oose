@@ -4,52 +4,7 @@ The base of a Spruce component library. It aims to describe the functions of UI 
 
 # Components
 
-## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Badge 
-An un-interactive presentation of state.
-### Modifiers 
-  * `positive`
-  * `negative`
-  * `hero`
-  * `primary`
-  * `$color`
 
-## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Box 
-A divided area of content.
-
-The unmodified `Box` should not have any margins or padding so it can be used as an invisible element container, like a `<div>`.
-
-### Modifiers
-* `absolute` - 
-* `alternative` - An alternative style for a box e.g. an alternative background color. Implies that the content of the box is heirarchically adjacent to surrounding content.
-* `bottom` - 
-* `bounded` - Applies some kind of boundary so that the boxes contents appear distinct from content around the box. e.g. using a border or background color. Implies that the content of the box is heirarchically beneath surrounding content.
-* `clearfix` - 
-* `color<Name>` - 
-* `fixed` - 
-* `floatLeft` - 
-* `floatRight` - 
-* `flood` - 
-* `hero` - 
-* `inline` - 
-* `left` - 
-* `margin<Direction><SiPrefix>`
-* `negative` - 
-* `pointer` - 
-* `positive` - 
-* `relative` - 
-* `right` - 
-* `top` - 
-
-
-## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Button
-The unmodified `Button` should appear as having netural importance. The `primary` modifier can be used on buttons that need to convey more importance.
-
-### Modifiers
- * `primary` - Makes the button more important.
- * `positive` - A button that implies a positive outcome.
- * `negative` - A button that implies a negative outcome.
- * `solo` - A button that is standalone and does not have siblings within the information heirarchy.
- * `inline` - A button that has a small amount of spacing so buttons may be placed next to each other.
 
 
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square) Checkbox 
