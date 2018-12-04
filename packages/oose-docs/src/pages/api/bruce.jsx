@@ -118,7 +118,7 @@ Zindex
 `;
 
 export default () => <ApiPage
-    name="Spruce"
+    name="Bruce"
     api={api}
     md={md}
 />;

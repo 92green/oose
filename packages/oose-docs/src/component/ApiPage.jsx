@@ -56,7 +56,7 @@ export default ({name, api, md, after}: Props) => {
     let Description = md._desc;
     let After = md._after;
     return <PageLayout
-        modifier="marginBottom"
+        modifier={`${name.toLowerCase()} marginBottom`}
         content={() => <Box>
             <Box modifier="marginBottomGiga">
                 <Typography>

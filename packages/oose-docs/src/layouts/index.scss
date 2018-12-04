@@ -87,4 +87,18 @@ $bruce: #2c3b77 !global;
             color: $moose;
         }
     }
+
+    &-goose {
+        color: darken($goose, 24);
+        .Link {
+            color: $goose;
+        }
+    }
+
+    &-spruce {
+        color: darken($spruce, 16);
+        .Link {
+            color: $spruce;
+        }
+    }
 }
