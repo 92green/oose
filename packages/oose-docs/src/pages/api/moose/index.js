@@ -7,7 +7,8 @@ import MooseNavigation from 'component/MooseNavigation';
 import PageLayout from 'component/PageLayout';
 
 export default () => <PageLayout
-    modifier="moose marginBottom"
+    theme="moose"
+    modifier="marginBottom"
     nav={() => <MooseNavigation />}
     content={() => <Typography><MooseMarkdown /></Typography>}
 />;

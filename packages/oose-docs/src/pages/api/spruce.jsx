@@ -25,6 +25,7 @@ Gotchas
 `;
 
 export default () => <ApiPage
+    theme="spruce"
     name="Spruce"
     api={api}
     md={md}

@@ -24,6 +24,6 @@ export default ({children}: Props): Node => <div>
             {name: "description", content: "A super declarative user input library that works really well with React."}
         ]}
     />
-    <Head />
+    <link rel="stylesheet" href="https://use.typekit.net/xiq1irb.css" />
     {children()}
 </div>;

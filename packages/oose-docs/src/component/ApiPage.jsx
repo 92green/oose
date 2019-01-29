@@ -52,10 +52,11 @@ type Props = {
     md: *
 };
 
-export default ({name, api, md, after}: Props) => {
+export default ({name, api, md, after, theme}: Props) => {
     let Description = md._desc;
     let After = md._after;
     return <PageLayout
+        theme={theme}
         modifier={`${name.toLowerCase()} marginBottom`}
         content={() => <Box>
             <Box modifier="marginBottomGiga">
@@ -67,7 +68,6 @@ export default ({name, api, md, after}: Props) => {
             {After && <Typography><After /></Typography>}
         </Box>}
         nav={() => <Fragment>
-            <APINavigation />
             <NavigationList>
                 <NavigationListItem>{name}</NavigationListItem>
                 {renderApi(api)}

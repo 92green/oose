@@ -104,6 +104,7 @@ Wrapper
 `;
 
 export default () => <ApiPage
+    theme="goose"
     name="Goose"
     api={api}
     md={md}

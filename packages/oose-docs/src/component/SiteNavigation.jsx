@@ -12,7 +12,7 @@ type Props = {
 
 export default () => <NavigationList modifier="margin">
     <NavigationListItem>
-        <Link to="/">Oose</Link>
+        <Link to="/" className="NavigationList_heading">Oose</Link>
     </NavigationListItem>
     <NavigationListItem>
         <a className="Link" href="https://github.com/blueflag/oose">Github</a>

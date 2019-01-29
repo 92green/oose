@@ -10,16 +10,18 @@ type Props = {
     modifier?: string
 };
 
-export default ({content, nav, modifier}: Props) => <Wrapper modifier={modifier}>
-    <Grid>
-        <GridItem modifier="9 padding">
-            {content()}
-        </GridItem>
-        <GridItem modifier="3">
-            <Box modifier="paddingTopMega">
-                <SiteNavigation />
-            </Box>
-            {nav && nav()}
-        </GridItem>
-    </Grid>
-</Wrapper>;
+export default ({content, nav, modifier, theme}: Props) => <div className={`Theme Theme-${theme}`}>
+    <Wrapper modifier={modifier}>
+        <Grid>
+            <GridItem modifier="9 padding">
+                {content()}
+            </GridItem>
+            <GridItem modifier="3">
+                <Box modifier="paddingTopMega">
+                    <SiteNavigation />
+                </Box>
+                {nav && nav()}
+            </GridItem>
+        </Grid>
+    </Wrapper>
+</div>;
