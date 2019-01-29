@@ -5,7 +5,7 @@ import Box from '../Box';
 test('will render a Box', () => {
     const box = shallow(<Box>Test Box</Box>);
     expect(box).toHaveText('Test Box');
-    expect(box).not.toHaveProp('modifier')
+    expect(box).not.toHaveProp('modifier');
 });
 
 test('will apply boxProps to outer element', () => {

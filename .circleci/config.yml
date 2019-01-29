@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/goose
     docker:
-      - image: circleci/node:8
+      - image: blueflag/client-build:0.0.7
 
     steps:
       - checkout
@@ -12,6 +12,7 @@ jobs:
             - v1-dependencies-{{ checksum "yarn.lock" }}
             - v1-dependencies-
       - run: yarn install
+      - run: yarn bootstrap
       - run: yarn build
       - save_cache:
           paths:

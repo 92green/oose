@@ -1,5 +1,4 @@
 // @flow
-import React from 'react';
 import SpruceClassName from '../SpruceClassName';
 
 test('modifier splitting', () => {
