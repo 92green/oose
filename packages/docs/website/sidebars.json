@@ -1,0 +1,98 @@
+{
+  "moose": {
+    "Moose": [
+      "moose/introduction",
+      "moose/categories"
+    ],
+    "Terms": [
+      "moose/affordance",
+      "moose/appliance",
+      "moose/layout",
+      "moose/structure",
+      "moose/view"
+    ]
+  },
+  "goose": {
+    "Goose": [
+      "goose/goose-installation"
+    ],
+    "Affordances": [
+      "goose/affordance/Toggle",
+      "goose/affordance/Badge",
+      "goose/affordance/Button",
+      "goose/affordance/Checkbox",
+      "goose/affordance/Choice",
+      "goose/affordance/DayPicker",
+      "goose/affordance/DeadEnd",
+      "goose/affordance/Dialog",
+      "goose/affordance/Divider",
+      "goose/affordance/Dropdown",
+      "goose/affordance/Icon",
+      "goose/affordance/Image",
+      "goose/affordance/Input",
+      "goose/affordance/Label",
+      "goose/affordance/Link",
+      "goose/affordance/Message",
+      "goose/affordance/Overlay",
+      "goose/affordance/Pagination",
+      "goose/affordance/ProgressBar",
+      "goose/affordance/Select",
+      "goose/affordance/Table",
+      "goose/affordance/Terminal",
+      "goose/affordance/Text"
+    ],
+    "Layout": [
+      "goose/layout/Box",
+      "goose/layout/Grid",
+      "goose/layout/Window",
+      "goose/layout/Wrapper"
+    ]
+  },
+  "spruce": {
+    "Spruce": [
+      "spruce/naming",
+      "spruce/naming-conventions",
+      "spruce/packages",
+      "spruce/gotchas"
+    ]
+  },
+  "bruce": {
+    "Bruce": [
+      "bruce/bruce-installation"
+    ],
+    "Functions": [
+      "bruce/function/Capitalize",
+      "bruce/function/Color",
+      "bruce/function/First",
+      "bruce/function/Fixed",
+      "bruce/function/Font",
+      "bruce/function/FourProps",
+      "bruce/function/Grey",
+      "bruce/function/Invert",
+      "bruce/function/Last",
+      "bruce/function/MapGetIn",
+      "bruce/function/Pastel",
+      "bruce/function/Power",
+      "bruce/function/RepeatChar",
+      "bruce/function/StripUnits",
+      "bruce/function/Zindex"
+    ],
+    "Mixins": [
+      "bruce/mixin/Animations",
+      "bruce/mixin/BoxSizing",
+      "bruce/mixin/Breakpoints",
+      "bruce/mixin/Clearfix",
+      "bruce/mixin/DirectionModifiers",
+      "bruce/mixin/Ellipsis",
+      "bruce/mixin/Flood",
+      "bruce/mixin/Fontface",
+      "bruce/mixin/Grid",
+      "bruce/mixin/Hide",
+      "bruce/mixin/Ratio",
+      "bruce/mixin/Reset",
+      "bruce/mixin/Size",
+      "bruce/mixin/SpruceChild",
+      "bruce/mixin/SpruceComponent"
+    ]
+  }
+}
