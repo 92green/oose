@@ -18,7 +18,7 @@
     "flow": "blueflag-test flow",
     "flow-coverage": "blueflag-test flow-coverage",
     "lint": "blueflag-test lint",
-    "test": "yarn jest",
+    "test": "yarn jest --maxWorkers 1",
     "test-all": "yarn lint && yarn flow && yarn test && yarn flow-coverage"
   },
   "devDependencies": {
