@@ -22,7 +22,7 @@ Text
 Toggle
 
 
-## List - Homogenous grouping of n content
+## List (Homogenous grouping of n content)
 BreadcrumbList ^
 BulletList ^
 ButtonList ^
@@ -32,7 +32,7 @@ NavigationList ^
 OrderedList ^
 TabList ^
 
-### Shape - Non-homogenous grouping of named content
+### Shape (Non-homogenous grouping of named content)
 DeadEnd ^
 Dropdown ^ @
 Dialog ^

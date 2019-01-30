@@ -1,0 +1,14 @@
+{
+  "extends": [
+      "eslint-config-blueflag/index",
+      "eslint-config-blueflag/flow",
+      "eslint-config-blueflag/react"
+  ],
+  "plugins": ["jest"],
+  "env": {
+      "jest": true
+  },
+  "globals": {
+    "shallow": true
+  }
+}

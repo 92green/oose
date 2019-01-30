@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import type {ChildrenArray, Node, ComponentType} from 'react';
+import type {Node, ComponentType} from 'react';
 import SpruceClassName from 'stampy/lib/util/SpruceClassName';
 
 /**

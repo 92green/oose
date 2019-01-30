@@ -1,0 +1,14 @@
+[options]
+module.file_ext=.graphql
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.json
+module.file_ext=.scss
+module.name_mapper='^~\(.*\)' -> '<PROJECT_ROOT>/src/\1'
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+
+
+[libs]
+../../flow-typed/npm/jest_v23.x.x.js
+./node_modules/blueflag-test/flow-typed-shims/jest-enzyme-6.0.x/
+
