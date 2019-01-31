@@ -13,7 +13,7 @@ const siteConfig = {
   tagline: `A collection of frameworks and libraries for building UI's`,
   url: 'https://oose.blueflag.codes',
   baseUrl: '/',
-  projectName: 'oose',
+  projectName: '',
   organizationName: 'Blue Flag',
   headerLinks: [
     {doc: 'moose/introduction', label: 'Moose'},
