@@ -1,3 +1,8 @@
+---
+id: Box
+title: Box
+---
+
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Box 
 A divided area of content.
 

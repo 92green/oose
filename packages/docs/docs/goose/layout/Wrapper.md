@@ -1,3 +1,8 @@
+---
+id: Wrapper
+title: Wrapper
+---
+
 import Link from 'component/Link';
 
 ```flow

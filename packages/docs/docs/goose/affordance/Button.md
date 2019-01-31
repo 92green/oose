@@ -1,3 +1,8 @@
+---
+id: Button
+title: Button
+---
+
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) Button
 The unmodified `Button` should appear as having netural importance. The `primary` modifier can be used on buttons that need to convey more importance.
 

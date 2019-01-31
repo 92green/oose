@@ -10,16 +10,16 @@ const users = [
 
 const siteConfig = {
   title: 'oose',
-  tagline: `A collection of frameworks and library for building UI's`,
+  tagline: `A collection of frameworks and libraries for building UI's`,
   url: 'https://oose.blueflag.codes',
   baseUrl: '/',
   projectName: 'oose',
   organizationName: 'Blue Flag',
   headerLinks: [
     {doc: 'moose/introduction', label: 'Moose'},
-    {doc: 'goose/goose-installation', label: 'Goose'},
-    {doc: 'spruce/naming', label: 'Spruce'},
-    {doc: 'bruce/bruce-installation', label: 'Bruce'},
+    {doc: 'goose/introduction', label: 'Goose'},
+    {doc: 'spruce/introduction', label: 'Spruce'},
+    {doc: 'bruce/introduction', label: 'Bruce'},
     {search: true}
   ],
   users,
@@ -28,8 +28,7 @@ const siteConfig = {
   favicon: 'img/favicon.png',
   colors: {
     primaryColor: '#2f1e2e',
-    secondaryColor: '#522e52',
-  },
+    secondaryColor: '#522e52'  },
 
   /* Custom fonts for website */
   /*

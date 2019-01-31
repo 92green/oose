@@ -14,10 +14,9 @@
   },
   "goose": {
     "Goose": [
-      "goose/goose-installation"
+      "goose/introduction"
     ],
     "Affordances": [
-      "goose/affordance/Toggle",
       "goose/affordance/Badge",
       "goose/affordance/Button",
       "goose/affordance/Checkbox",
@@ -39,7 +38,8 @@
       "goose/affordance/Select",
       "goose/affordance/Table",
       "goose/affordance/Terminal",
-      "goose/affordance/Text"
+      "goose/affordance/Text",
+      "goose/affordance/Toggle"
     ],
     "Layout": [
       "goose/layout/Box",
@@ -50,7 +50,7 @@
   },
   "spruce": {
     "Spruce": [
-      "spruce/naming",
+      "spruce/introduction",
       "spruce/naming-conventions",
       "spruce/packages",
       "spruce/gotchas"
@@ -58,7 +58,7 @@
   },
   "bruce": {
     "Bruce": [
-      "bruce/bruce-installation"
+      "bruce/introduction"
     ],
     "Functions": [
       "bruce/function/Capitalize",

@@ -60,13 +60,14 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/docusaurus.svg`} />
+        {/*<Logo img_src={`${baseUrl}img/docusaurus.svg`} />*/}
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href={docUrl('moose/introduction')}>Moose</Button>
+            <Button href={docUrl('goose/introduction')}>Goose</Button>
+            <Button href={docUrl('bruce/introduction')}>Bruce</Button>
+            <Button href={docUrl('spruce/introduction')}>Spruce</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -142,19 +143,31 @@ class Index extends React.Component {
     );
 
     const Features = () => (
-      <Block layout="fourColumn">
+      <Block background="light" layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
+            content: 'A conceptual framework for structuring user interfaces.',
             image: `${baseUrl}img/docusaurus.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Moose',
           },
           {
-            content: 'The content of my second feature',
+            content: 'A standard affordance specification.',
             image: `${baseUrl}img/docusaurus.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Goose',
+          },
+          {
+            content: 'An affordance naming methodology.',
+            image: `${baseUrl}img/docusaurus.svg`,
+            imageAlign: 'top',
+            title: 'Spruce',
+          },
+          {
+            content: 'A Sass helper library.',
+            image: `${baseUrl}img/docusaurus.svg`,
+            imageAlign: 'top',
+            title: 'Bruce',
           },
         ]}
       </Block>
@@ -194,11 +207,6 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase />
         </div>
       </div>
     );

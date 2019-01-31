@@ -1,3 +1,8 @@
+---
+id: Message
+title: Message
+---
+
 ## ![](https://img.shields.io/badge/-draft-red.svg?style=flat-square)
 Messages are used for when the website communicates information about its current status or data to the user, such as "Loading...", "Invalid password" or "404".
 

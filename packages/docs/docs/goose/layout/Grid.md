@@ -1,3 +1,8 @@
+---
+id: Grid
+title: Grid
+---
+
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square)
 A `Grid` consists of a series of columns, whose widths are defined by ratios of the `Grid`'s total width. These ratios are divisions of 12, so a 2 column `Grid` would contain 2 columns, each with width 6. By default `Grid`s columns stack on top of each other on small page widths.
 

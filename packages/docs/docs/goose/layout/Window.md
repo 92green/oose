@@ -1,3 +1,8 @@
+---
+id: Window
+title: Window
+---
+
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square)
 A combination of a fixed-height title bar and a variable-height content area.
 

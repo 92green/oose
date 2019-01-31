@@ -1,5 +1,5 @@
 ---
-id: naming
+id: introduction
 title: Spruce
 ---
 

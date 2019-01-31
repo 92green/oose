@@ -1,5 +1,5 @@
 ---
-id: bruce-installation
+id: introduction
 title: Bruce
 ---
 
@@ -19,8 +19,6 @@ bruce is a bunch of Sass helpers. To use it just import as you like, before your
 @import "myActuallySass";
 @import "otherSass";
 @import "moreSass";
-@import "embarrassingSass";
-```
 
 
 

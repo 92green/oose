@@ -1,3 +1,8 @@
+---
+id: Text
+title: Text
+---
+
 ## ![](https://img.shields.io/badge/-candidate-yellow.svg?style=flat-square) 
 Any text to display on the website, e.g. copy, headings, titles.
 

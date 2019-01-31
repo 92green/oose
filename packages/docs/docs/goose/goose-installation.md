@@ -1,5 +1,5 @@
 ---
-id: goose-installation
+id: introduction
 title: Installation
 ---
 
