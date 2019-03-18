@@ -3,6 +3,7 @@ import type {Node} from 'react';
 import React from 'react';
 import CreateSelect from 'react-select/lib/Creatable';
 import ReactSelect from 'react-select';
+import {createFilter} from 'react-select';
 import get from 'unmutable/lib/get';
 import set from 'unmutable/lib/set';
 import map from 'unmutable/lib/map';
@@ -26,6 +27,7 @@ type BaseProps = {
     loading?: boolean,
     menuPortalTarget?: *,
     onChange: Function,
+    filterOption: Function | Object,
     options: *,
     placeholder?: string
 };
@@ -103,6 +105,7 @@ export default class ReactSelectGoose extends React.Component<Props> {
         const {getId = get('id')} = this.props;
         const {getLabel = get('name')} = this.props;
         const {placeholder} = this.props;
+        const {filterOption} = this.props;
 
         const Component = this.props.create ? CreateSelect : ReactSelect;
 
@@ -128,6 +131,7 @@ export default class ReactSelectGoose extends React.Component<Props> {
         return <Component
             isMulti={multi}
             isLoading={loading}
+            filterOption={filterOption && (typeof filterOption === 'function' ? filterOption : createFilter(filterOption))}
             menuPortalTarget={menuPortalTarget}
             closeMenuOnSelect={!multi}
             isClearable={clearable}
